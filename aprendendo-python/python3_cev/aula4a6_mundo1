@@ -168,6 +168,8 @@ num1 = int(input('Insira um número: '))
 Resultado: Insira um número: 3 -> 3 (tipo inteiro)
 ```
 
+Para aprofundamento prático: [Exercício 0](../python3_cev/exe000.py)
+
 ## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
 
 Para facilitar o aprendizado em Python, a instalação de uma IDE (Integrated Development Environment) otimizada para o desenvolvimento na linguagem Python, é de grande ajuda!
