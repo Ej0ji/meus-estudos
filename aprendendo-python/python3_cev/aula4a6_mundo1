@@ -8,7 +8,7 @@
 
 ---
 
-## Aula 4 – Primeiros comandos em Python3 + Exercício 0
+## Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios - Aula 4
 
 Esta aula abordará os conceitos e comandos bases de:
 
@@ -160,7 +160,7 @@ nome = input('Escreva seu nome: ')
 Resultado: Escreva seu nome: ____
 ```
 
-Para aprofundamento prático: [Exercício 0](../python3_cev/exe000.py)
+Para aprofundamento prático verifique: [Exercício 0](../python3_cev/exe000.py) e [Desafios - Aula 4](../python3_cev/dsfs_aula4.py)
 
 ## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
 
@@ -170,14 +170,71 @@ Verifique a documentação no [site da JetBrains para instalar o PyCharm](https:
 
 Para aprofundamento prático (de forma complementar ao Exercício 0): [Exercício 1](../python3_cev/exe001.py) e [Exercício 2](../python3_cev/exe002.py)
 
-## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4
+## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios - Aula 6
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
 
-Além de inserir os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função 'input()' é do tipo string, porém é possível definir o valor inserido como tipo numérico utilizando funções de definição de tipo, como exemplo 'int()':
+Então, além de receber os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função 'input()' é do tipo string: 
+
+```Python
+# Verificar o tipo da variável usando função 'type()'.
+
+n1 = input('Digite um valor: ') # -> 4
+print(type(n1))
+
+Resultado: <class 'str'>
+```
+
+Porém é possível redefinir os tipos desses valores.
+
+---
+
+### Tipos Primitivos em entradas e saídas e *Type Casting* (Mudança de tipos)
+
+Antes de iniciar as mudanças de tipo de dados é preciso, obviamente, entender quais são os tipos primitivos. Aqui vão os mais comuns e usuais:
+
+- int (Inteiros): Valores numéricos sem casas decimais, positivos ou negativos (ex: 7, -4, 0);
+- float (Flutuantes/Reais): Números com ponto flutuante ou casas decimais (ex: 4.5, 0.075, -15.22).
+- bool (Booleanos): Valores lógicos que aceitam apenas dois estados: verdadeiro (True) ou falso (False).
+- str (Strings): Cadeias de caracteres delimitadas por aspas simples ou duplas (ex: 'Olá', "3.5").
+
+Para cada um dos tipos acima, é possível realizar uma mudança de tipo específica utilizando funções de *type casting*:
 
 ```Python
 num1 = int(input('Insira um número: '))
 
-Resultado: Insira um número: 3 -> 3 (tipo inteiro)
+Resultado: Insira um número: 3 -> 3 (tipo str para int)
 ```
+
+```Python
+num1 = str(input('Insira um número: '))
+
+Resultado: Insira um número: 3 -> 3 (mantém o tipo str)
+```
+
+```Python
+num1 = float(input('Insira um número: '))
+
+Resultado: Insira um número: 3.0 -> 3.0 (tipo str para float)
+```
+
+```Python
+num1 = bool(input('Insira um número: '))
+
+Resultado: Insira um número: 3 -> (True) (tipo str para bool)
+# A função 'bool()' considera como 'True' qualquer valor existente e 'False' para o contrário, nesse caso.
+```
+
+---
+
+### Métodos de Verificação de Tipos (is...)
+
+Em casos, onde o objetivo é identificar de forma condicional (condicionais serão vistos mais a frente no curso) as saídas e tipos de variáveis, existem diversos métodos de verificação.
+
+Os métodos de verificação de tipos (is...) são testes lógicos nativos do Python para descobrir as propriedades do valor digitado, usando objetos de string:
+
+- .isnumeric(): Verifica se o valor pode ser convertido para um número.
+- .isalpha(): Valida se o conteúdo é estritamente alfabético (letras).
+- .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
+
+Para aprofundamento prático verifique: [Exercício 3](../python3_cev/exe003.py), [Exercício 4](../python3_cev/exe004.py) e [Desafios - Aula 6](../python3_cev/dsfs_aula6.py)
