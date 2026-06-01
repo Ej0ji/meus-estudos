@@ -160,14 +160,6 @@ nome = input('Escreva seu nome: ')
 Resultado: Escreva seu nome: ____
 ```
 
-Além de inserir os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função 'input()' é do tipo string, porém é possível definir o valor inserido como tipo numérico utilizando funções de definição de tipo, como exemplo 'int()':
-
-```Python
-num1 = int(input('Insira um número: '))
-
-Resultado: Insira um número: 3 -> 3 (tipo inteiro)
-```
-
 Para aprofundamento prático: [Exercício 0](../python3_cev/exe000.py)
 
 ## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
@@ -181,3 +173,11 @@ Para aprofundamento prático (de forma complementar ao Exercício 0): [Exercíci
 ## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
+
+Além de inserir os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função 'input()' é do tipo string, porém é possível definir o valor inserido como tipo numérico utilizando funções de definição de tipo, como exemplo 'int()':
+
+```Python
+num1 = int(input('Insira um número: '))
+
+Resultado: Insira um número: 3 -> 3 (tipo inteiro)
+```
