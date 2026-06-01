@@ -176,6 +176,8 @@ Para facilitar o aprendizado em Python, a instalação de uma IDE (Integrated De
 
 Verifique a documentação no [site da JetBrains para instalar o PyCharm](https://www.jetbrains.com/pycharm/).
 
+Para aprofundamento prático (de forma complementar ao Exercício 0): [Exercício 1](../python3_cev/exe001.py) e [Exercício 2](../python3_cev/exe002.py)
+
 ## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
