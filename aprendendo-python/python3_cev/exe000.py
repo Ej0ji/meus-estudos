@@ -37,3 +37,4 @@ nome = input('Escreva seu nome: ')
 idade = input(int('Digite sua idade: '))
 
 peso = input(float('Digite seu peso '))
+
