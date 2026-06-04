@@ -238,3 +238,5 @@ Os métodos de verificação de tipos (is...) são testes lógicos nativos do Py
 - .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
 
 Para aprofundamento prático verifique: [Exercício 3](../python3_cev/exe003.py), [Exercício 4](../python3_cev/exe004.py) e [Desafios - Aula 6](../python3_cev/dsfs_aula6.py)
+
+---
