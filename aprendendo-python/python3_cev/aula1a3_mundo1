@@ -4,7 +4,9 @@
 
 - [Aula 1 - Seja um programador!](#aula-1---seja-um-programador)
 - [Aula 2 - Para que serve Python?](#aula-2---para-que-serve-python)
-- [Aula 3 - Instalando Python](#aula-3-instalando-python)
+- [Aula 3 - Instalando Python](#aula-3---instalando-python)
+
+---
 
 ## Aula 1 - Seja um programador!
 
@@ -70,7 +72,7 @@ Esta vem a ser uma linguagem, que com essas diferentes caracteristicas, apta par
 
 - 🎮 Áreas diversas como desenvolvimento de jogos, computação gráfica, scripts e automações.
 
-## Aula 3 Instalando Python
+## Aula 3 - Instalando Python
 
 Como visto na aula 1, para um programador conseguir passar instruções e se comunicar com máquinas processadoras, o mesmo necessita de uma linguagem para ser a mediação entre a comunicação humana e máquina. Uma vez que, um utiliza verbos e textos, a outra utiliza zeros e uns. Essa é a **linguagem de programação**
 
@@ -105,6 +107,7 @@ E para obter os requisitos acima, basta seguir o passo-a-passo de instalação c
 
 ---
 
+Ir para: <a href="aprendendo-python\python3_cev\aula4a6_mundo1">Aula 4 a 6</a>
 
 
 

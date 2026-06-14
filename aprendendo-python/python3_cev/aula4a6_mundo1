@@ -2,13 +2,13 @@
 
 ## Sumário
 
-- [Aula 4 – Primeiros comandos em Python3 + Exercício 0](#aula-4--primeiros-comandos-em-python3)
+- [Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios](#aula-4--primeiros-comandos-em-python3--exercício-0--desafios)
 - [Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2](#aula-5---instalando-o-pycharm-e-o-qpython3--exercícios-1-e-2)
-- [Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4](#aula-6---tipos-primitivos-e-saída-de-dados--exercícios-3-e-4)
+- [Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios](#aula-6---tipos-primitivos-e-saída-de-dados--exercícios-3-e-4--desafios)
 
 ---
 
-## Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios - Aula 4
+## Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios
 
 Esta aula abordará os conceitos e comandos bases de:
 
@@ -160,7 +160,7 @@ nome = input('Escreva seu nome: ')
 Resultado: Escreva seu nome: ____
 ```
 
-Para aprofundamento prático verifique: [Exercício 0](../python3_cev/exe000.py) e [Desafios - Aula 4](../python3_cev/dsfs_aula4.py)
+Para aprofundamento prático verifique: [Exercício 0](../python3_cev/exe000.py) e [Desafios](../python3_cev/dsfs_aula4.py)
 
 ## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
 
@@ -170,7 +170,7 @@ Verifique a documentação no [site da JetBrains para instalar o PyCharm](https:
 
 Para aprofundamento prático (de forma complementar ao Exercício 0): [Exercício 1](../python3_cev/exe001.py) e [Exercício 2](../python3_cev/exe002.py)
 
-## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios - Aula 6
+## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
 
@@ -237,6 +237,6 @@ Os métodos de verificação de tipos (is...) são testes lógicos nativos do Py
 - .isalpha(): Valida se o conteúdo é estritamente alfabético (letras).
 - .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
 
-Para aprofundamento prático verifique: [Exercício 3](../python3_cev/exe003.py), [Exercício 4](../python3_cev/exe004.py) e [Desafios - Aula 6](../python3_cev/dsfs_aula6.py)
+Para aprofundamento prático verifique: [Exercício 3](../python3_cev/exe003.py), [Exercício 4](../python3_cev/exe004.py) e [Desafios](../python3_cev/dsfs_aula6.py)
 
 ---
