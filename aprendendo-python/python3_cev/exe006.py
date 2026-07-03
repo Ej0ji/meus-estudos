@@ -1,7 +1,7 @@
 # Exercício 6 - Aula 7
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
-# Ler um número e mostrar o seu dobro, triplo e raiz quadrada
+# Ler um número e mostrar o seu dobro, triplo e raiz quadrada.
 
 numero = float(input('Digite um número qualquer: '))
 print('-' * 40)

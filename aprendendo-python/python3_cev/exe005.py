@@ -1,7 +1,7 @@
 # Exercício 5 - Aula 7
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
-# Ler um número inteiro e mostrar seu antecessor e seu sucessor
+# Ler um número inteiro e mostrar seu antecessor e seu sucessor.
 
 numero_inteiro = int(input('Digite um número inteiro: '))
 print('_' * 30)
