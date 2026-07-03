@@ -10,4 +10,4 @@ media = (nota1 + nota2) / 2
 
 print('-' * 30)
 
-print('A nota média do aluno foi {:.2f}'.format(media))
+print('A nota média do aluno foi {:.2f}.'.format(media))
