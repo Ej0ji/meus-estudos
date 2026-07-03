@@ -8,4 +8,4 @@ num2 = int(input('Digite o segundo número: '))
 
 resultado_soma = num1 + num2
 
-print(f"A soma entre {num1} e {num2} é igual a {resultado_soma}")
+print('A soma entre', num1, 'e', num2, 'é igual a', resultado_soma)

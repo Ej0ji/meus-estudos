@@ -5,4 +5,6 @@
 
 nomePessoa = input('Qual é o seu nome?: ')
 
-print(f'Seja bem-vindo, {nomePessoa}!')
+print('Seja bem-vindo,', nomePessoa + '!')
+
+# OBS: A vírgula (',') concatena o texto com o valor da variável adicionando um espaço entre ambos, já o símbolo de adição ('+') concatena sem adicionar esse espaço.
