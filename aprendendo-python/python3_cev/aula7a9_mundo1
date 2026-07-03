@@ -2,13 +2,247 @@
 
 ## Sumário
 
-- [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--exercícios-5-a-15--desafios)
+- [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15--desafios)
 - [Aula 8 - Utilizando Módulos](#aula-8---utilizando-módulos--exercícios-16-a-21--desafios)
 - [Aula 9 - Manipulando Texto](#aula-9---manipulando-texto--exercícios-22-a-27--desafios)
 
 ---
 
-## Aula 7 - Operadores Aritméticos + Exercícios 5 a 15 + Desafios
+## Aula 7 - Operadores Aritméticos + Formatação Avançada de 'Print()' + Exercícios 5 a 15 + Desafios
+
+### Introdução aos Operadores Aritméticos
+
+Nesta aula, damos um passo importante: aprender a trabalhar com cálculos em Python. Diferente da matemática tradicional que usa símbolos como `÷` e `×`, a programação utiliza caracteres específicos do teclado para representar operações. Esses operadores são a base para qualquer tipo de processamento numérico e serão fundamentais para construir programas mais complexos.
+
+#### Operadores Básicos
+
+- **Adição:** `+` — soma dois valores.
+  ```python
+  print(5 + 3)      # 8
+  print(10 + 20)    # 30
+  print(2.5 + 1.5)  # 4.0
+  ```
+
+- **Subtração:** `-` — subtrai o segundo valor do primeiro.
+  ```python
+  print(10 - 3)     # 7
+  print(5 - 8)      # -3
+  print(7.5 - 2.5)  # 5.0
+  ```
+
+- **Multiplicação:** `*` (asterisco) — multiplica dois valores.
+  ```python
+  print(4 * 5)      # 20
+  print(3 * 2.5)    # 7.5
+  print(-2 * 3)     # -6
+  ```
+
+- **Divisão:** `/` (barra) — divide o primeiro valor pelo segundo, retornando sempre um número com casas decimais.
+  ```python
+  print(10 / 2)     # 5.0 (note o .0)
+  print(7 / 2)      # 3.5
+  print(9 / 3)      # 3.0
+  ```
+
+- **Exponenciação (Potência):** `**` (dois asteriscos juntos) — eleva um número a uma potência.
+  ```python
+  print(2 ** 3)     # 8 (2 elevado a 3)
+  print(5 ** 2)     # 25 (5 elevado a 2)
+  print(10 ** 0)    # 1 (qualquer número elevado a 0 é 1)
+  ```
+
+- **Divisão Inteira:** `//` (duas barras juntas) — realiza a divisão e descarta a parte decimal, retornando apenas o número inteiro.
+  ```python
+  print(10 // 3)    # 3 (não é 3.333...)
+  print(7 // 2)     # 3 (não é 3.5)
+  print(20 // 4)    # 5
+  ```
+
+- **Módulo (Resto da Divisão):** `%` (sinal de porcentagem) — retorna o resto de uma divisão inteira (não calcula porcentagem, mas sim o que sobra).
+  ```python
+  print(10 % 3)     # 1 (resto de 10 ÷ 3)
+  print(7 % 2)      # 1 (resto de 7 ÷ 2)
+  print(20 % 4)     # 0 (20 é divisível por 4)
+  ```
+
+#### Exemplo Prático de Divisão Inteira e Módulo
+
+Considere o exemplo clássico: dividir 5 por 2. Ao armar essa conta, temos:
+
+- Resultado inteiro: **2** (obtido via `5 // 2`).
+- Resto da divisão: **1** (obtido via `5 % 2`).
+
+Isso faz sentido pois $5 = 2 \times 2 + 1$, onde 2 é o quociente e 1 é o resto.
+
+---
+
+### Ordem de Precedência
+
+Quando temos expressões matemáticas mais complexas, com múltiplos operadores, é essencial saber em qual ordem eles são executados. Do contrário, obteremos resultados incorretos. Por isso, o Python (assim como a matemática) segue uma ordem estrita e bem definida:
+
+A regra mnemônica que muitos usam é **PEMDAS** (Parênteses, Exponenciação, Multiplicação/Divisão, Adição/Subtração), mas em Python a ordem é:
+
+1. **`()` Parênteses:** Tudo o que estiver dentro deles é resolvido primeiro, tendo a prioridade **máxima**. Em Python, não se usam colchetes `[]` ou chaves `{}` para priorizar expressões matemáticas — esses símbolos têm outras funções na linguagem. Use sempre `()` para deixar clara sua intenção.
+
+2. **`**` Potência:** É executada segundo, antes de qualquer multiplicação, divisão ou adição. A potência é uma operação muito poderosa e por isso recebe prioridade alta.
+
+3. **`*`, `/`, `//`, `%` (nível intermediário):** Multiplicação, divisão, divisão inteira e resto têm **exatamente a mesma prioridade**. Se aparecerem juntos em uma expressão, são resolvidos **da esquerda para a direita**. Isso é importante para evitar erros sutis.
+
+4. **`+`, `-` (nível mais baixo):** Adição e subtração são executadas por último e também têm a mesma prioridade entre si, sendo resolvidas **da esquerda para a direita**.
+
+#### Exemplos Práticos de Precedência
+
+**Exemplo 1: `5 + 3 * 2`**
+
+```python
+print(5 + 3 * 2)  # 11 (NÃO é 16)
+```
+
+Passo a passo:
+- Primeiro: `3 * 2 = 6` (multiplicação tem prioridade)
+- Depois: `5 + 6 = 11`
+
+Se quiséssemos `(5 + 3) * 2`, seria necessário usar parênteses para obter `16`.
+
+**Exemplo 2: `3 * 5 + 4 ** 2`**
+
+```python
+print(3 * 5 + 4 ** 2)  # 31
+```
+
+Passo a passo:
+- Primeiro: `4 ** 2 = 16` (potência tem maior prioridade)
+- Depois: `3 * 5 = 15` (multiplicação vem antes de adição)
+- Por fim: `15 + 16 = 31`
+
+**Exemplo 3: `3 * (5 + 4) ** 2`**
+
+```python
+print(3 * (5 + 4) ** 2)  # 243
+```
+
+Passo a passo:
+- Primeiro: `(5 + 4) = 9` (parênteses têm prioridade máxima)
+- Depois: `9 ** 2 = 81` (potência)
+- Por fim: `3 * 81 = 243` (multiplicação)
+
+**Exemplo 4: `10 / 2 * 3` — entendendo esquerda para direita**
+
+```python
+print(10 / 2 * 3)  # 15.0 (NÃO é 1.666...)
+```
+
+Passo a passo:
+- Divisão e multiplicação têm mesma prioridade, então resolvemos **da esquerda para a direita**:
+- `10 / 2 = 5.0`
+- `5.0 * 3 = 15.0`
+
+Se fosse `10 / (2 * 3)`, teríamos `10 / 6 = 1.666...`
+
+---
+
+### Operações com Strings e Recursos Especiais do Python
+
+Além dos operadores tradicionais para números, o Python oferece recursos interessantes que facilitam a manipulação de dados numéricos e textuais. Esses recursos ampliam o que podemos fazer com operadores simples:
+
+**Recursos Numéricos Especiais:**
+
+- **Grandes números:** O Python gerencia automaticamente a memória para exibir números gigantescos (como $356^{522}$) sem estourar limites de variáveis — algo que outras linguagens não conseguem fazer tão facilmente.
+- **Função `pow(base, expoente)`:** Uma alternativa ao operador `**` para cálculo de potência, útil em algumas situações.
+- **Raízes utilizando frações:** Elevar um número a uma fração resulta em sua raiz. Por exemplo:
+  - `81 ** (1/2)` resulta em `9.0` (raiz quadrada).
+  - `8 ** (1/3)` resulta em `2.0` (raiz cúbica).
+
+**Operadores com Strings (Texto):**
+
+Interessantemente, alguns operadores funcionam diferente quando aplicados a texto. Não é adição e multiplicação no sentido matemático, mas operações de manipulação textual:
+
+- O operador `+` funciona para **concatenar** (juntar) textos: `'Oi' + ' ' + 'Mundo'` resulta em `'Oi Mundo'`.
+- O operador `*` funciona para **replicar** o texto: `'Oi' * 3` gera `'OiOiOi'`.
+
+---
+
+### Formatação Avançada de Saída (Print)
+
+Tendo domínio nas diversas formas de calcular diferentes valores em Python, é hora de aprender a exibir esses resultados de diferentes maneiras. Nem sempre queremos simplesmente imprimir um número — às vezes precisamos alinhá-lo, limitar casas decimais ou criar uma saída visualmente interessante.
+
+O método `.format()` é uma ferramenta poderosa para isso. Ele permite inserir valores dentro de uma string e formatar como desejamos:
+
+#### Espaçamento e Alinhamento
+
+**`{:20}` — Espaço fixo (padrão à esquerda):**
+
+```python
+print('|{:20}|'.format('Python'))
+# |Python              |
+```
+O texto ocupa exatamente 20 caracteres, preenchendo os espaços em branco à direita.
+
+**`{:>20}` — Alinhado à direita:**
+
+```python
+print('|{:>20}|'.format('Python'))
+# |              Python|
+```
+Útil para alinhar números ou dados em colunas.
+
+**`{:<20}` — Alinhado à esquerda:**
+
+```python
+print('|{:<20}|'.format('Python'))
+# |Python              |
+```
+Alinhamento padrão em listas ou labels.
+
+**`{:^20}` — Centralizado:**
+
+```python
+print('|{:^20}|'.format('Python'))
+# |        Python      |
+```
+Perfeito para títulos e cabeçalhos.
+
+**`{:=^20}` — Centralizado com preenchimento customizado:**
+
+```python
+print('{:=^20}'.format('Python'))
+# =======Python======
+```
+Os espaços são preenchidos com o caractere `=`, criando uma linha decorativa. Você pode usar qualquer caractere aqui.
+
+#### Formatação de Números
+
+**`{:.3f}` — Limitar casas decimais:**
+
+```python
+valor = 3.14159
+print('Pi = {:.3f}'.format(valor))
+# Pi = 3.142
+```
+Útil para valores monetários, percentuais e outros números que não precisam de muitas casas decimais.
+
+#### Manipulação de Linhas no Print
+
+Além da formatação de conteúdo, podemos controlar como o `print()` quebra linhas:
+
+- **`end=' '`**: Por padrão, `print()` termina com uma quebra de linha (`\n`). Usar `end=' '` substitui isso por um espaço, juntando vários prints na mesma linha:
+
+```python
+print('Olá', end=' ')
+print('Mundo')
+# Olá Mundo
+```
+
+- **`\n` — Quebra de linha dentro da string:**
+
+```python
+print('Linha 1\nLinha 2')
+# Linha 1
+# Linha 2
+```
+Usa-se `\n` para inserir quebras de linha estratégicas no meio de um texto.
+
+Para aprofundamento prático verifique:
 
 ## Aula 8 - Utilizando Módulos + Exercícios 16 a 21 + Desafios
 
