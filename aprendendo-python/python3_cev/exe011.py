@@ -15,4 +15,5 @@ area_parede = largura_parede * altura_parede
 litros_tinta_por_parede = area_parede / 2
 
 print('-' * 45)
+
 print('Para pintar a sua parede de {}m², serão necessários {}L de tinta.'.format(area_parede, litros_tinta_por_parede))
