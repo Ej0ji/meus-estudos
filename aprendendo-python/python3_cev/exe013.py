@@ -5,7 +5,7 @@
 
 salario_atual = float(input('Digite o salário do funcionário: R$'))
 
-print()
+print('-' * 40)
 
 novo_salario = salario_atual * 1.15
 

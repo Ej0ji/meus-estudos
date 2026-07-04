@@ -7,6 +7,8 @@ valor_graus_C = float(input('Digite o valor em graus Célsius: '))
 
 valor_C_para_F = (valor_graus_C * 1.8) + 32
 
+print('-' * 40)
+
 # A fórmula é assim devido à diferença no tamanho dos graus e no ponto de partida (zero) de cada escala.
 
 # A estrutura dividida explica essa relação matemática: A escala Celsius e a escala Fahrenheit possuem intervalos diferentes entre o ponto de congelamento e o ponto de ebulição da água:
