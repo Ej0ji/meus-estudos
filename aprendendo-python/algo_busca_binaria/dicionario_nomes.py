@@ -22,6 +22,6 @@ nomesGenericos = [
 # Criando dicionário indexado à partir da enumeração dos nomes da lista 'nomesGenericos'
 dicionarioGenerico = {i: nome for i, nome in enumerate(nomesGenericos)}
 
-# Teste unitário para visualizar a saída do dicionário apenas quando 'name_dict.py' é executado diretamente
+# Teste unitário para visualizar a saída do dicionário apenas quando 'dicionario_nomes.py' é executado diretamente
 if __name__ == "__main__":
     print(dicionarioGenerico)
