@@ -3,8 +3,16 @@
 ## Sumário
 
 - [Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios](#aula-4--primeiros-comandos-em-python3--exercício-0--desafios)
+  - [Como exibir uma mensagem? - Função 'print()'](#como-exibir-uma-mensagem---função-print)
+  - [Concatenação e o uso de sinais](#concatenacao-e-o-uso-de-sinais)
+  - [Variáveis e entrada de dados através de funções 'inputs()'](#variaveis-e-entrada-de-dados-atraves-de-funcoes-inputs)
+  - [Relação com os exercícios 0](#relacao-com-os-exercicios-0)
 - [Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2](#aula-5---instalando-o-pycharm-e-o-qpython3--exercícios-1-e-2)
+  - [Relação com os exercícios 1 a 2](#relacao-com-os-exercicios-1-a-2)
 - [Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios](#aula-6---tipos-primitivos-e-saída-de-dados--exercícios-3-e-4--desafios)
+  - [Tipos Primitivos em entradas e saídas e *Type Casting* (Mudança de tipos)](#tipos-primitivos-em-entradas-e-saidas-e-type-casting-mudanca-de-tipos)
+  - [Métodos de Verificação de Tipos (is...)](#metodos-de-verificacao-de-tipos-is)
+  - [Relação com os exercícios 3 a 4](#relacao-com-os-exercicios-3-a-4)
 
 ---
 

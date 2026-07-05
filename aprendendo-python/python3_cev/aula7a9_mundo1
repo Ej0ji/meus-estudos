@@ -3,7 +3,20 @@
 ## Sumário
 
 - [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
+  - [Introdução aos Operadores Aritméticos](#introducao-aos-operadores-aritmeticos)
+  - [Ordem de Precedência](#ordem-de-precedencia)
+  - [Operações com Strings e Recursos Especiais do Python](#operacoes-com-strings-e-recursos-especiais-do-python)
+  - [Formatação Avançada de Saída (Print)](#formatacao-avancada-de-saida-print)
+  - [Relação com os exercícios 5 a 15](#relacao-com-os-exercicios-5-a-15)
 - [Aula 8 - Utilizando Módulos](#aula-8---utilizando-módulos--exercícios-16-a-21--desafios)
+  - [Introdução ao Uso de Módulos](#introducao-ao-uso-de-modulos)
+  - [Por que usar módulos?](#por-que-usar-modulos)
+  - [Formas de importação de módulos](#formas-de-importacao-de-modulos)
+  - [Módulos nativos](#modulos-nativos)
+  - [Módulos externos e a comunidade PyPI](#modulos-externos-e-a-comunidade-pypi)
+  - [Como descobrir o que um módulo oferece](#como-descobrir-o-que-um-modulo-oferece)
+  - [Boas práticas ao trabalhar com módulos](#boas-praticas-ao-trabalhar-com-modulos)
+  - [Relação com os exercícios 16 a 21](#relacao-com-os-exercicios-16-a-21)
 - [Aula 9 - Manipulando Texto](#aula-9---manipulando-texto--exercícios-22-a-27--desafios)
 
 ---
