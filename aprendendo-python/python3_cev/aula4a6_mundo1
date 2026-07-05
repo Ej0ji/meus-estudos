@@ -160,7 +160,15 @@ nome = input('Escreva seu nome: ')
 Resultado: Escreva seu nome: ____
 ```
 
-Para aprofundamento prático verifique: [Exercício 0](../python3_cev/exe000.py) e [Desafios](../python3_cev/dsfs_aula4.py)
+---
+### Relação com os exercícios 0
+
+Para aprofundamento prático, consulte:
+
+- <a href="../python3_cev/exe000.py">Exercício 0</a>
+- <a href="../python3_cev/dsfs_aula4.py">Desafios</a>
+
+Esses exercícios ajudam a consolidar o uso inicial de variáveis, entrada de dados e a lógica básica de interação com o usuário. Eles são uma boa forma de colocar em prática os primeiros conceitos vistos na aula, especialmente o uso da função input() e o entendimento de como um programa pode receber e processar informações.
 
 ## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
 
@@ -168,7 +176,17 @@ Para facilitar o aprendizado em Python, a instalação de uma IDE (Integrated De
 
 Verifique a documentação no [site da JetBrains para instalar o PyCharm](https://www.jetbrains.com/pycharm/).
 
-Para aprofundamento prático (de forma complementar ao Exercício 0): [Exercício 1](../python3_cev/exe001.py) e [Exercício 2](../python3_cev/exe002.py)
+---
+### Relação com os exercícios 1 a 2
+
+Para aprofundamento prático, consulte:
+
+- <a href="../python3_cev/exe001.py">Exercício 1</a>
+- <a href="../python3_cev/exe002.py">Exercício 2</a>
+
+Esses exercícios complementam a prática inicial com o Python, reforçando a ideia de como escrever pequenos programas, testar comandos e observar o comportamento das instruções em tempo de execução. Eles ajudam a fortalecer a confiança do estudante ao começar a construir soluções simples e direto no terminal.
+
+
 
 ## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios
 
@@ -237,7 +255,17 @@ Os métodos de verificação de tipos (is...) são testes lógicos nativos do Py
 - .isalpha(): Valida se o conteúdo é estritamente alfabético (letras).
 - .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
 
-Para aprofundamento prático verifique: [Exercício 3](../python3_cev/exe003.py), [Exercício 4](../python3_cev/exe004.py) e [Desafios](../python3_cev/dsfs_aula6.py)
+---
+### Relação com os exercícios 3 a 4
+
+Para aprofundamento prático, consulte:
+
+- <a href="../python3_cev/exe003.py">Exercício 3</a>
+- <a href="../python3_cev/exe004.py">Exercício 4</a>
+- <a href="../python3_cev/dsfs_aula6.py">Desafios</a>
+
+Esses exercícios ajudam a consolidar o uso de entrada e saída de dados, além de introduzir noções básicas de manipulação de tipos e transformação de valores. Eles são importantes porque mostram como o Python pode receber informações do usuário e tratá-las de formas diferentes, dependendo do contexto do problema.
+
 
 ---
 
