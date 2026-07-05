@@ -2,13 +2,13 @@
 
 ## Sumário
 
-- [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15--desafios)
+- [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
 - [Aula 8 - Utilizando Módulos](#aula-8---utilizando-módulos--exercícios-16-a-21--desafios)
 - [Aula 9 - Manipulando Texto](#aula-9---manipulando-texto--exercícios-22-a-27--desafios)
 
 ---
 
-## Aula 7 - Operadores Aritméticos + Formatação Avançada de 'Print()' + Exercícios 5 a 15 + Desafios
+## Aula 7 - Operadores Aritméticos + Formatação Avançada de 'Print()' + Exercícios 5 a 15
 
 ### Introdução aos Operadores Aritméticos
 
@@ -242,8 +242,240 @@ print('Linha 1\nLinha 2')
 ```
 Usa-se `\n` para inserir quebras de linha estratégicas no meio de um texto.
 
-Para aprofundamento prático verifique:
+---
+
+### Relação com os exercícios 5 a 15
+
+Para aprofundamento prático, consulte:
+
+- <a href="../python3_cev/exe005.py">Exercício 5</a>
+- <a href="../python3_cev/exe006.py">Exercício 6</a>
+- <a href="../python3_cev/exe007.py">Exercício 7</a>
+- <a href="../python3_cev/exe008.py">Exercício 8</a>
+- <a href="../python3_cev/exe009.py">Exercício 9</a>
+- <a href="../python3_cev/exe010.py">Exercício 10</a>
+- <a href="../python3_cev/exe011.py">Exercício 11</a>
+- <a href="../python3_cev/exe012.py">Exercício 12</a>
+- <a href="../python3_cev/exe013.py">Exercício 13</a>
+- <a href="../python3_cev/exe014.py">Exercício 14</a>
+- <a href="../python3_cev/exe015.py">Exercício 15</a>
+
+Os exercícios propostos nessa parte do curso ajudam a consolidar os conceitos abordados na aula, principalmente o uso de operadores aritméticos, a formatação de saída e a lógica básica de programação. Eles são uma excelente forma de praticar a escrita de código de maneira gradual e objetiva.
 
 ## Aula 8 - Utilizando Módulos + Exercícios 16 a 21 + Desafios
+
+### Introdução ao Uso de Módulos
+
+Até este ponto, já vimos como escrever programas básicos com entradas, operações e saídas. Porém, em programação, é muito comum precisar de recursos que já foram implementados por outras pessoas, para não precisar reescrever tudo do zero. É exatamente nesse ponto que os módulos entram em cena. Um módulo é, em termos simples, um conjunto de funções, constantes e recursos prontos que podem ser reutilizados em nossos programas. Pense nele como uma biblioteca de ferramentas: em vez de construir cada instrumento do início, você pega aquilo que já está pronto e usa de forma prática.
+
+Por padrão, a instalação básica do Python vem configurada com um conjunto enxuto de comandos e operadores de fábrica (como +, -, *, /, ). Essa arquitetura minimalista é intencional: serve para garantir que a linguagem permaneça leve, apresente inicialização rápida e não consuma memória RAM de forma desnecessária com recursos que o programador pode não precisar em scripts simples.
+
+---
+
+### Por que usar módulos?
+
+A instalação básica do Python já vem com um conjunto enxuto de recursos, o suficiente para começar a programar. Porém, para resolver problemas mais específicos, surgem necessidades maiores: cálculos matemáticos avançados, geração de números aleatórios, manipulação de texto, acesso a datas, interfaces gráficas, comunicação com internet e muito mais.
+
+É nesse ponto que os módulos entram em cena. Eles expandem as funcionalidades do Python sem sobrecarregar a linguagem com tudo de uma vez. Assim, o programa permanece leve e eficiente, mas ganha acesso a ferramentas muito mais poderosas.
+
+---
+
+### Formas de importação de módulos
+
+Existem duas formas fundamentais de importar recursos em Python, cada uma com um propósito diferente.
+
+#### Importação generalista: `import`
+
+Essa abordagem traz todas as funcionalidades contidas em uma biblioteca para o ambiente do programa.
+
+```python
+import nome_da_biblioteca
+```
+
+Quando fazemos isso, o módulo inteiro passa a estar disponível. Para usar uma função específica, é necessário indicar o nome do módulo antes do recurso desejado.
+
+```python
+import math
+
+print(math.sqrt(16))
+```
+
+Nesse exemplo, `sqrt()` pertence ao módulo `math`, por isso é preciso usar o prefixo `math.`.
+
+#### 2. Importação específica: `from ... import ...`
+
+Essa abordagem realiza uma importação mais direta, trazendo apenas a função ou o recurso que realmente será usado.
+
+```python
+from nome_da_biblioteca import funcao_especifica
+```
+
+Como a função foi puxada diretamente para o código, não é necessário usar o prefixo do módulo.
+
+```python
+from math import sqrt
+
+print(sqrt(25))
+```
+
+Também é possível importar mais de uma função ao mesmo tempo:
+
+```python
+from nome_da_biblioteca import funcao_A, funcao_B
+```
+
+Essa forma é útil quando se deseja economizar escrita e trabalhar com apenas alguns recursos específicos.
+
+---
+
+### Módulos nativos 
+
+O Python, por natureza, é uma linguagem que valoriza a reutilização de código. Por isso, ele vem com uma grande quantidade de módulos prontos na sua biblioteca padrão.
+
+- #### Módulo `math`
+
+A biblioteca `math` é um dos módulos nativos do Python voltado para operações matemáticas mais avançadas. Ele reúne funções e constantes que expandem o que já era possível fazer com os operadores aritméticos básicos.
+
+Algumas das funções principais do módulo `math` são:
+
+- `math.ceil()` — arredonda para cima.
+- `math.floor()` — arredonda para baixo.
+- `math.trunc()` — elimina as casas decimais, sem arredondar.
+- `math.pow()` — calcula a potência.
+- `math.sqrt()` — calcula a raiz quadrada.
+- `math.factorial()` — calcula o fatorial de um número inteiro.
+
+```python
+import math
+
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+
+print('A raiz de {} é igual a {}'.format(num, raiz))
+print('Arredondada para cima: {}'.format(math.ceil(raiz)))
+print('Arredondada para baixo: {}'.format(math.floor(raiz)))
+```
+
+Também é possível fazer uma importação específica, como no exemplo abaixo:
+
+```python
+from math import sqrt, floor
+
+num = int(input('Digite um número: '))
+raiz = sqrt(num)
+
+print('A raiz de {} é {:.2f}'.format(num, floor(raiz)))
+```
+
+O módulo `math` também oferece funções de trigonometria, como seno, cosseno e tangente. Porém, é importante lembrar que o Python trabalha com ângulos em radianos.
+
+```python
+import math
+
+angulo = 30
+print(math.sin(math.radians(angulo)))
+print(math.cos(math.radians(angulo)))
+print(math.tan(math.radians(angulo)))
+```
+
+Esse detalhe é essencial para obter resultados corretos ao trabalhar com ângulos.
+
+- #### O módulo `random`
+
+O módulo `random` é usado para gerar números aleatórios e fazer escolhas imprevisíveis. Esse recurso é muito utilizado em jogos, sorteios e simulações.
+
+Funções básicas do módulo `random`:
+
+- `random.random()` — gera um número real entre 0.0 e 1.0.
+- `random.randint(inicio, fim)` — gera um inteiro aleatório dentro de um intervalo fechado.
+
+```python
+import random
+num = random.random()
+print(num)
+```
+
+```python
+import random
+
+numero_sorteado = random.randint(1, 10)
+print(numero_sorteado)
+```
+
+Esses exemplos mostram como a aleatoriedade pode ser usada de forma simples e prática em programas.
+
+---
+
+### Módulos externos e a comunidade PyPI
+
+Além dos módulos que já vêm com a instalação padrão do Python, existe uma grande comunidade de desenvolvedores que cria e compartilha bibliotecas externas. Esse ecossistema é conhecido como PyPI, que é o repositório oficial de pacotes Python.
+
+O PyPI funciona como uma espécie de mercado de ferramentas para programadores. Nele, é possível encontrar bibliotecas para diferentes finalidades, como automação, inteligência artificial, análise de dados, desenvolvimento web, gráficos, jogos e muito mais.
+
+Essas bibliotecas podem ser instaladas no ambiente do projeto com o comando `pip`, o que torna o Python ainda mais poderoso e flexível.
+
+- #### Módulo `emoji`
+
+Um exemplo clássico de módulo externo é o `emoji`. Ele permite exibir emojis no terminal, tornando a saída do programa mais visual e interessante.
+
+Para instalar esse módulo, normalmente usamos o comando `pip`:
+
+```bash
+pip install emoji
+```
+
+Depois da instalação, ele pode ser importado e usado assim:
+
+```python
+import emoji
+
+print(emoji.emojize("Olá, Mundo :earth_americas:", use_aliases=True))
+print(emoji.emojize("Python é fantástico :sunglasses:", use_aliases=True))
+```
+
+Esse exemplo mostra como módulos externos podem enriquecer a experiência do usuário e dar mais personalidade aos programas.
+
+---
+
+### Como descobrir o que um módulo oferece
+
+Uma habilidade muito importante nessa aula é saber explorar a documentação e os recursos dos módulos. Em vez de tentar memorizar tudo de cabeça, você pode recorrer a comandos que mostram o conteúdo disponível.
+
+```python
+import math
+
+print(dir(math))
+```
+
+Esse comando lista tudo o que o módulo oferece. Já a função `help()` permite abrir a documentação de um recurso específico.
+
+```python
+import math
+
+help(math.sqrt)
+```
+
+Essa prática é extremamente útil porque, em programação, é muito comum precisar consultar a documentação para saber exatamente como usar uma função.
+
+---
+
+### Boas práticas ao trabalhar com módulos
+
+Alguns cuidados importantes são necessários ao usar módulos:
+
+- importe módulos no início do programa;
+- prefira nomes claros e legíveis;
+- use `import math` quando precisar de vários recursos do módulo;
+- use `from math import sqrt` apenas quando for necessário importar algo específico;
+- leia a documentação sempre que tiver dúvida sobre uma função;
+- não tenha medo de testar exemplos pequenos antes de aplicá-los em programas maiores.
+
+Essas boas práticas tornam o código mais compreensível e evitam problemas futuros.
+
+---
+
+### Relação com os exercícios 16 a 21
+
+Esses exercícios são uma excelente oportunidade para colocar em prática tudo o que foi aprendido nesta aula, principalmente o uso de funções matemáticas, o cálculo de medidas como hipotenusa e razões trigonométricas, a aplicação de números aleatórios em situações simples e a utilização de recursos extras para melhorar a apresentação dos programas.
 
 ## Aula 9 - Manipulando Texto + Exercícios 22 a 27 + Desafios
