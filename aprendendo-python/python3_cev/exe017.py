@@ -16,7 +16,7 @@ print('O valor da hipotenusa do triângulo cujo comprimento do cateto oposto é 
 
 # RESOLUÇÃO 2 - Com módulos --------------------------------------------------
 
-# IMPORTS
+# IMPORTAÇÕES
 
 from math import hypot
 

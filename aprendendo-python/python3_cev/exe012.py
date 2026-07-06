@@ -3,7 +3,6 @@
 
 # Ler o preço de um produto e mostrar seu novo preço com 5% de desconto.
 
-
 preco_produto = float(input('Digite o valor do produto: R$'))
 
 print('-' * 30)
