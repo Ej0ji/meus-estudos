@@ -9,6 +9,8 @@
 
 import pygame
 
+# LÓGICA
+
 # Inicializa o mixer do pygame
 pygame.mixer.init()
 
@@ -21,7 +23,13 @@ pygame.mixer.music.play()
 # Mantém o programa rodando enquanto a música toca
 input('Pressione Enter para parar a música...')
 
+
 # RESOLUÇÃO 2 - Com playsound3 ---------------------------------------------
 
 # IMPORTAÇÕES
 
+import playsound3
+
+# LÓGICA
+
+playsound3.playsound('C:/Users/ericj/OneDrive/Documents/GitHub/meus-estudos/aprendendo-python/python3_cev/assets/faaah.mp3')
