@@ -475,7 +475,15 @@ Alguns cuidados importantes são necessários ao usar módulos:
 Essas boas práticas tornam o código mais compreensível e evitam problemas futuros.
 
 ---
-### Relação com os exercícios 16 a 21
+### Relação com os exercícios 16 a 20
+
+Para aprofundamento prático consulte:
+
+- <a href="../python3_cev/exe016.py">Exercício 16</a>
+- <a href="../python3_cev/exe017.py">Exercício 17</a>
+- <a href="../python3_cev/exe018.py">Exercício 18</a>
+- <a href="../python3_cev/exe019.py">Exercício 19</a>
+- <a href="../python3_cev/exe020.py">Exercício 20</a>
 
 Esses exercícios são uma excelente oportunidade para colocar em prática tudo o que foi aprendido nesta aula, principalmente o uso de funções matemáticas, o cálculo de medidas como hipotenusa e razões trigonométricas, a aplicação de números aleatórios em situações simples e a utilização de recursos extras para melhorar a apresentação dos programas.
 
