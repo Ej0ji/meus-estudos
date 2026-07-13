@@ -20,7 +20,6 @@
 - [Aula 9 - Manipulando Texto](#aula-9---manipulando-texto--exercícios-22-a-27--desafios)
 
 ---
-
 ## Aula 7 - Operadores Aritméticos + Formatação Avançada de 'Print()' + Exercícios 5 a 15
 
 ### Introdução aos Operadores Aritméticos
@@ -88,7 +87,6 @@ Considere o exemplo clássico: dividir 5 por 2. Ao armar essa conta, temos:
 Isso faz sentido pois $5 = 2 \times 2 + 1$, onde 2 é o quociente e 1 é o resto.
 
 ---
-
 ### Ordem de Precedência
 
 Quando temos expressões matemáticas mais complexas, com múltiplos operadores, é essencial saber em qual ordem eles são executados. Do contrário, obteremos resultados incorretos. Por isso, o Python (assim como a matemática) segue uma ordem estrita e bem definida:
@@ -153,7 +151,6 @@ Passo a passo:
 Se fosse `10 / (2 * 3)`, teríamos `10 / 6 = 1.666...`
 
 ---
-
 ### Operações com Strings e Recursos Especiais do Python
 
 Além dos operadores tradicionais para números, o Python oferece recursos interessantes que facilitam a manipulação de dados numéricos e textuais. Esses recursos ampliam o que podemos fazer com operadores simples:
@@ -174,7 +171,6 @@ Interessantemente, alguns operadores funcionam diferente quando aplicados a text
 - O operador `*` funciona para **replicar** o texto: `'Oi' * 3` gera `'OiOiOi'`.
 
 ---
-
 ### Formatação Avançada de Saída (Print)
 
 Tendo domínio nas diversas formas de calcular diferentes valores em Python, é hora de aprender a exibir esses resultados de diferentes maneiras. Nem sempre queremos simplesmente imprimir um número — às vezes precisamos alinhá-lo, limitar casas decimais ou criar uma saída visualmente interessante.
@@ -256,7 +252,6 @@ print('Linha 1\nLinha 2')
 Usa-se `\n` para inserir quebras de linha estratégicas no meio de um texto.
 
 ---
-
 ### Relação com os exercícios 5 a 15
 
 Para aprofundamento prático, consulte:
@@ -284,7 +279,6 @@ Até este ponto, já vimos como escrever programas básicos com entradas, opera�
 Por padrão, a instalação básica do Python vem configurada com um conjunto enxuto de comandos e operadores de fábrica (como +, -, *, /, ). Essa arquitetura minimalista é intencional: serve para garantir que a linguagem permaneça leve, apresente inicialização rápida e não consuma memória RAM de forma desnecessária com recursos que o programador pode não precisar em scripts simples.
 
 ---
-
 ### Por que usar módulos?
 
 A instalação básica do Python já vem com um conjunto enxuto de recursos, o suficiente para começar a programar. Porém, para resolver problemas mais específicos, surgem necessidades maiores: cálculos matemáticos avançados, geração de números aleatórios, manipulação de texto, acesso a datas, interfaces gráficas, comunicação com internet e muito mais.
@@ -292,7 +286,6 @@ A instalação básica do Python já vem com um conjunto enxuto de recursos, o s
 É nesse ponto que os módulos entram em cena. Eles expandem as funcionalidades do Python sem sobrecarregar a linguagem com tudo de uma vez. Assim, o programa permanece leve e eficiente, mas ganha acesso a ferramentas muito mais poderosas.
 
 ---
-
 ### Formas de importação de módulos
 
 Existem duas formas fundamentais de importar recursos em Python, cada uma com um propósito diferente.
@@ -315,7 +308,7 @@ print(math.sqrt(16))
 
 Nesse exemplo, `sqrt()` pertence ao módulo `math`, por isso é preciso usar o prefixo `math.`.
 
-#### 2. Importação específica: `from ... import ...`
+#### Importação específica: `from ... import ...`
 
 Essa abordagem realiza uma importação mais direta, trazendo apenas a função ou o recurso que realmente será usado.
 
@@ -340,12 +333,11 @@ from nome_da_biblioteca import funcao_A, funcao_B
 Essa forma é útil quando se deseja economizar escrita e trabalhar com apenas alguns recursos específicos.
 
 ---
-
 ### Módulos nativos 
 
 O Python, por natureza, é uma linguagem que valoriza a reutilização de código. Por isso, ele vem com uma grande quantidade de módulos prontos na sua biblioteca padrão.
 
-- #### Módulo `math`
+#### Módulo `math`
 
 A biblioteca `math` é um dos módulos nativos do Python voltado para operações matemáticas mais avançadas. Ele reúne funções e constantes que expandem o que já era possível fazer com os operadores aritméticos básicos.
 
@@ -393,7 +385,7 @@ print(math.tan(math.radians(angulo)))
 
 Esse detalhe é essencial para obter resultados corretos ao trabalhar com ângulos.
 
-- #### O módulo `random`
+#### O módulo `random`
 
 O módulo `random` é usado para gerar números aleatórios e fazer escolhas imprevisíveis. Esse recurso é muito utilizado em jogos, sorteios e simulações.
 
@@ -418,7 +410,6 @@ print(numero_sorteado)
 Esses exemplos mostram como a aleatoriedade pode ser usada de forma simples e prática em programas.
 
 ---
-
 ### Módulos externos e a comunidade PyPI
 
 Além dos módulos que já vêm com a instalação padrão do Python, existe uma grande comunidade de desenvolvedores que cria e compartilha bibliotecas externas. Esse ecossistema é conhecido como PyPI, que é o repositório oficial de pacotes Python.
@@ -427,7 +418,7 @@ O PyPI funciona como uma espécie de mercado de ferramentas para programadores. 
 
 Essas bibliotecas podem ser instaladas no ambiente do projeto com o comando `pip`, o que torna o Python ainda mais poderoso e flexível.
 
-- #### Módulo `emoji`
+#### Módulo `emoji`
 
 Um exemplo clássico de módulo externo é o `emoji`. Ele permite exibir emojis no terminal, tornando a saída do programa mais visual e interessante.
 
@@ -449,7 +440,6 @@ print(emoji.emojize("Python é fantástico :sunglasses:", use_aliases=True))
 Esse exemplo mostra como módulos externos podem enriquecer a experiência do usuário e dar mais personalidade aos programas.
 
 ---
-
 ### Como descobrir o que um módulo oferece
 
 Uma habilidade muito importante nessa aula é saber explorar a documentação e os recursos dos módulos. Em vez de tentar memorizar tudo de cabeça, você pode recorrer a comandos que mostram o conteúdo disponível.
@@ -471,7 +461,6 @@ help(math.sqrt)
 Essa prática é extremamente útil porque, em programação, é muito comum precisar consultar a documentação para saber exatamente como usar uma função.
 
 ---
-
 ### Boas práticas ao trabalhar com módulos
 
 Alguns cuidados importantes são necessários ao usar módulos:
@@ -486,7 +475,6 @@ Alguns cuidados importantes são necessários ao usar módulos:
 Essas boas práticas tornam o código mais compreensível e evitam problemas futuros.
 
 ---
-
 ### Relação com os exercícios 16 a 21
 
 Esses exercícios são uma excelente oportunidade para colocar em prática tudo o que foi aprendido nesta aula, principalmente o uso de funções matemáticas, o cálculo de medidas como hipotenusa e razões trigonométricas, a aplicação de números aleatórios em situações simples e a utilização de recursos extras para melhorar a apresentação dos programas.

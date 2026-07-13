@@ -15,7 +15,6 @@
   - [Relação com os exercícios 3 a 4](#relacao-com-os-exercicios-3-a-4)
 
 ---
-
 ## Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios
 
 Esta aula abordará os conceitos e comandos bases de:
@@ -29,14 +28,13 @@ Esta aula abordará os conceitos e comandos bases de:
 Então, antes de tudo poder exibir uma mensagem na tela, pode ser um bom ínicio de interação com programação.
 
 ---
-
 ### Como exibir uma mensagem? - Função 'print()'
 
 Para exibir mensagens, textos, resultados de cálculos e valores, pode-se utilizar a função 'print()' 
 
     *OBS: O conceito de funções será visto mais a frente no curso*
 
-- #### Exibição de textos:
+#### Exibição de textos:
 
 Tudo que for exibido com o intuito de expressar um texto deve estar entre aspas (no Python podem ser tanto aspas simples quanto duplas, porém o usual são as simples):
 
@@ -52,8 +50,7 @@ print('7' + '4')
 Resultado: 74 (string)
 ```
 
-
-- #### Exibição de números e/ou cálculos:
+#### Exibição de números e/ou cálculos:
 
 Tudo o que for exibido com o intuito de ser usado em cálculos ou números **não** deve conter aspas:
 
@@ -73,12 +70,11 @@ O Python diferencia claramente:
 Essa diferença é essencial para evitar erros futuros.
 
 ---
-
 ### Concatenação e o uso de sinais
 
 O conceito de concatenação é essencial dentro do mundo da programação e, como visto acima, por exemplo, é possível concatenar mensagens que serão retornadas ao usuário, porém existem alguns pontos de atenção sobre as formas de se realizar a concatenação:
 
-- #### Concatenação utilizando o símbolo de adição '+':
+#### Concatenação utilizando o símbolo de adição '+':
 
 O símbolo de adição '+' em Python, além de ser, um operador de adição entre números, também possui diversas funções e uma delas é a concatenação de texto com texto, exclusivamente. Isto é, é possível concatenar textos, se e somente se tudo for string.
 
@@ -99,7 +95,7 @@ print('7' + '7')
 Resultado: '77'
 ```
 
-- #### Concatenação utilizando vírgula:
+#### Concatenação utilizando vírgula:
 
 É o método mais seguro e versátil para concatenar dados de naturezas diferentes, pois concatena texto, número, etc.
 
@@ -121,10 +117,9 @@ Resultado: 7 7 # (7 string 7 string)
 ```
 
 ---
-
 ### Variáveis e entrada de dados através de funções 'inputs()'
 
-- #### O que são variáveis?
+#### O que são variáveis?
 
 Além de exibir mensagens, um segundo ponto importante para se entender no começo do estudo de programação em Python é o de **variáveis**.
 
@@ -132,7 +127,7 @@ Além de exibir mensagens, um segundo ponto importante para se entender no come�
 
 Daí a importância destas variáveis. Uma vez que o objetivo final de todo e qualquer programa é manipular dados para gerar ações. Os dados podem ser definidos de forma prática, como sendo o 'sangue' de um programa.
 
-- #### Regras sintáticas das variáveis
+#### Regras sintáticas das variáveis
 
 Ao criar as tais variáveis, é preciso seguir algumas regras básicas para que seja possível definí-las com sucesso dentro de um programa.
 
@@ -157,8 +152,7 @@ nome = 'Guanabara'
 - **Sensibilidade** (Case Sensitive): Nomes com letras maiúsculas e minúsculas são tratados como variáveis diferentes. Ex: idade <> Idade.
 
 ---
-
-- #### Atribuição de variáveis através de 'input()'
+#### Atribuição de variáveis através de 'input()'
 
 Uma das possíveis formas de inserir dados em variáveis é a função 'input()'. Com esta, é criado para o usuário, um local para inserir dados através do terminal.
 
@@ -194,8 +188,6 @@ Para aprofundamento prático, consulte:
 
 Esses exercícios complementam a prática inicial com o Python, reforçando a ideia de como escrever pequenos programas, testar comandos e observar o comportamento das instruções em tempo de execução. Eles ajudam a fortalecer a confiança do estudante ao começar a construir soluções simples e direto no terminal.
 
-
-
 ## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
@@ -214,7 +206,6 @@ Resultado: <class 'str'>
 Porém é possível redefinir os tipos desses valores.
 
 ---
-
 ### Tipos Primitivos em entradas e saídas e *Type Casting* (Mudança de tipos)
 
 Antes de iniciar as mudanças de tipo de dados é preciso, obviamente, entender quais são os tipos primitivos. Aqui vão os mais comuns e usuais:
@@ -252,7 +243,6 @@ Resultado: Insira um número: 3 -> (True) (tipo str para bool)
 ```
 
 ---
-
 ### Métodos de Verificação de Tipos (is...)
 
 Em casos, onde o objetivo é identificar de forma condicional (condicionais serão vistos mais a frente no curso) as saídas e tipos de variáveis, existem diversos métodos de verificação.
@@ -274,7 +264,5 @@ Para aprofundamento prático, consulte:
 
 Esses exercícios ajudam a consolidar o uso de entrada e saída de dados, além de introduzir noções básicas de manipulação de tipos e transformação de valores. Eles são importantes porque mostram como o Python pode receber informações do usuário e tratá-las de formas diferentes, dependendo do contexto do problema.
 
-
 ---
-
 Ir para: <a href="../python3_cev/aula7a9_mundo1">Aula 7 a 9</a>

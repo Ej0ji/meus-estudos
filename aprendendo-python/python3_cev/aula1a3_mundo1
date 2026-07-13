@@ -11,7 +11,6 @@
 - [Aula 3 - Instalando Python](#aula-3---instalando-python)
 
 ---
-
 ## Aula 1 - Seja um programador!
 
 ### O que é ser um programador?
@@ -102,8 +101,6 @@ Em conclusão, o desenvolvimento em Python necessita dos seguintes componentes:
 - *Integrated Development Environment (IDE)* 
 
         IDE -> Não citado anteriormente, mas não menos importante. É, como o próprio nome diz, um ambiente para o desenvolvedor escrever os programas.
-
-
 
 Como este é um curso de Python, é interessante especificar que a IDE nativa de Python chama-se *Integrated Development and Learning Environment (IDLE)*, pois é também otimizada para o processo de aprendizado.
 
