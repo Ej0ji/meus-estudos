@@ -91,7 +91,7 @@ Isso faz sentido pois $5 = 2 \times 2 + 1$, onde 2 é o quociente e 1 é o resto
 
 Quando temos expressões matemáticas mais complexas, com múltiplos operadores, é essencial saber em qual ordem eles são executados. Do contrário, obteremos resultados incorretos. Por isso, o Python (assim como a matemática) segue uma ordem estrita e bem definida:
 
-A regra mnemônica que muitos usam é **PEMDAS** (Parênteses, Exponenciação, Multiplicação/Divisão, Adição/Subtração), mas em Python a ordem é:
+A regra mnemônica que muitos usam é *PEMDAS* (Parênteses, Exponenciação, Multiplicação/Divisão, Adição/Subtração), mas em Python a ordem é:
 
 1. **`()` Parênteses:** Tudo o que estiver dentro deles é resolvido primeiro, tendo a prioridade **máxima**. Em Python, não se usam colchetes `[]` ou chaves `{}` para priorizar expressões matemáticas — esses símbolos têm outras funções na linguagem. Use sempre `()` para deixar clara sua intenção.
 
@@ -410,7 +410,7 @@ print(numero_sorteado)
 Esses exemplos mostram como a aleatoriedade pode ser usada de forma simples e prática em programas.
 
 ---
-### Módulos externos e a comunidade PyPI
+### Módulos externos e a comunidade *PyPI*
 
 Além dos módulos que já vêm com a instalação padrão do Python, existe uma grande comunidade de desenvolvedores que cria e compartilha bibliotecas externas. Esse ecossistema é conhecido como PyPI, que é o repositório oficial de pacotes Python.
 
@@ -523,7 +523,7 @@ Quando atribuimos um valor textual a uma variável, o Python não armazena a fra
   ```
 
 ---
-### Técnica de Fatiamento (Slicing)
+### Técnica de Fatiamento (*Slicing*)
 
 Basicamente, fatiar uma string consiste em extrair pedaços específicos dela. Para realizar essa operação, usamos a estrutura de colchetes `[]` logo após o nome da variável. Os principais intervalos funcionam conforme as regras a seguir:
 

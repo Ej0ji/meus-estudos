@@ -98,11 +98,11 @@ Em conclusão, o desenvolvimento em Python necessita dos seguintes componentes:
 
 - Linguagem
 - Interpretador
-- *Integrated Development Environment (IDE)* 
+- *Integrated Development Environment* (*IDE*) 
 
         IDE -> Não citado anteriormente, mas não menos importante. É, como o próprio nome diz, um ambiente para o desenvolvedor escrever os programas.
 
-Como este é um curso de Python, é interessante especificar que a IDE nativa de Python chama-se *Integrated Development and Learning Environment (IDLE)*, pois é também otimizada para o processo de aprendizado.
+Como este é um curso de Python, é interessante especificar que a IDE nativa de Python chama-se *Integrated Development and Learning Environment* (*IDLE*), pois é também otimizada para o processo de aprendizado.
 
 E para obter os requisitos acima, basta seguir o passo-a-passo de instalação conforme documentação e pacotes de instalação do próprio [site oficial do Python](https://www.python.org/).
 

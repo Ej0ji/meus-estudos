@@ -141,7 +141,7 @@ nome = 'Guanabara'
 
 **Sintaxe de nomeação**: Para definir variáveis, é necessário que o nome delas:
 
-- **Caracteres permitidos**: Use apenas letras (A-Z, a-z), números (0-9) e sublinhado (underscore _).
+- **Caracteres permitidos**: Use apenas letras (A-Z, a-z), números (0-9) e sublinhado (*underscore* _).
 
 - **Início**: Não comece nomes com números. Sempre inicie com uma letra ou underscore.
 
@@ -149,7 +149,7 @@ nome = 'Guanabara'
 
 - **Palavras reservadas**: Não use palavras-chave que já possuem uma função na linguagem (ex: if, for, print, while).
 
-- **Sensibilidade** (Case Sensitive): Nomes com letras maiúsculas e minúsculas são tratados como variáveis diferentes. Ex: idade <> Idade.
+- **Sensibilidade** (*Case Sensitive*): Nomes com letras maiúsculas e minúsculas são tratados como variáveis diferentes. Ex: idade <> Idade.
 
 ---
 #### Atribuição de variáveis através de 'input()'
@@ -172,9 +172,9 @@ Para aprofundamento prático, consulte:
 
 Esses exercícios ajudam a consolidar o uso inicial de variáveis, entrada de dados e a lógica básica de interação com o usuário. Eles são uma boa forma de colocar em prática os primeiros conceitos vistos na aula, especialmente o uso da função input() e o entendimento de como um programa pode receber e processar informações.
 
-## Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2
+## Aula 5 - Instalando o *PyCharm* e o *QPython3* + Exercícios 1 e 2
 
-Para facilitar o aprendizado em Python, a instalação de uma IDE (Integrated Development Environment) otimizada para o desenvolvimento na linguagem Python, é de grande ajuda!
+Para facilitar o aprendizado em Python, a instalação de uma *IDE* (*Integrated Development Environment*) otimizada para o desenvolvimento na linguagem Python, é de grande ajuda!
 
 Verifique a documentação no [site da JetBrains para instalar o PyCharm](https://www.jetbrains.com/pycharm/).
 
