@@ -487,4 +487,202 @@ Para aprofundamento prático consulte:
 
 Esses exercícios são uma excelente oportunidade para colocar em prática tudo o que foi aprendido nesta aula, principalmente o uso de funções matemáticas, o cálculo de medidas como hipotenusa e razões trigonométricas, a aplicação de números aleatórios em situações simples e a utilização de recursos extras para melhorar a apresentação dos programas.
 
-## Aula 9 - Manipulando Texto + Exercícios 22 a 27 + Desafios
+## Aula 9 - Manipulando Texto + Exercícios 21 a 26
+
+### O Conceito de *String* e o Gerenciamento na Memória
+
+Nesta aula, estudaremos um dos pilares da programação em Python: a manipulação de textos. A ideia central é compreender como as strings são organizadas na memória, como elas podem ser acessadas em partes específicas, como podem ser analisadas e transformadas e, por fim, como podem ser exibidas de forma mais elegante e organizada.
+
+Também observaremos que as *strings* representam frases ou cadeias de caracteres delimitadas no Python por aspas simples ou aspas duplas (ex: `'Curso em Vídeo Python'`).
+
+Quando atribuimos um valor textual a uma variável, o Python não armazena a frase inteira em um único bloco, mas sim em microespaços sequenciais na memória do computador, alocando cada letra, símbolo ou espaço em branco em uma posição específica.
+
+- **Índices:** É possível observar que cada caractere recebe um número de identificação sequencial que começa obrigatoriamente no 0. Na frase `"Curso em Vídeo Python"`, os índices vão de `0` a `20`, totalizando 21 caracteres.
+
+  ```python
+  frase = 'Curso em Vídeo Python'
+  print(frase[0])
+  print(frase[6])
+  ```
+
+  Resultado esperado:
+  ```python
+  C
+  e
+  ```
+
+- **Case-Sensitivity:** Observamos que o Python diferencia rigidamente letras maiúsculas de minúsculas. Um `"V"` maiúsculo e um `"v"` minúsculo são armazenados como entidades inteiramente distintas.
+
+  ```python
+  print('V' == 'v')
+  ```
+
+  Resultado esperado:
+  ```python
+  False
+  ```
+
+---
+### Técnica de Fatiamento (Slicing)
+
+Basicamente, fatiar uma string consiste em extrair pedaços específicos dela. Para realizar essa operação, usamos a estrutura de colchetes `[]` logo após o nome da variável. Os principais intervalos funcionam conforme as regras a seguir:
+
+- **`frase[9]`**: Isola e retorna apenas o caractere localizado exatamente na posição 9.
+- **`frase[9:13]`**: Define um início (9) e um fim (13). A regra fundamental do Python determina que o último valor do intervalo sempre é excluído da contagem. Portanto, esse comando captura as posições 9, 10, 11 e 12, deixando a posição 13 de fora.
+- **`frase[9:21]`**: Observamos também que, embora o índice 21 não exista na frase (que vai até 20), o código funciona. Como o 21 é excluído, o interpretador captura o texto até a última posição real (20).
+- **`frase[9:21:2]`**: O terceiro número, define o "passo" ou salto. Nesse caso, a coleta dos caracteres ocorre do índice 9 ao 20, pulando de dois em dois.
+- **`frase[:5]`**: Ao omitir o primeiro valor antes dos dois pontos, o Python assume automaticamente o início da string, ou seja, o índice `0`.
+- **`frase[15:]`**: Ao omitir o segundo valor, o fatiamento se inicia na posição indicada (15) e prossegue até o final do texto, independentemente do tamanho.
+- **`frase[9::3]`**: Este comando permite combinar as regras anteriores. Ele começa no índice 9, segue até o final da string e avança de três em três caracteres.
+
+  ```python
+  frase = 'Curso em Vídeo Python'
+  print(frase[9])
+  print(frase[9:13])
+  print(frase[9:21])
+  print(frase[9:21:2])
+  print(frase[:5])
+  print(frase[15:])
+  print(frase[9::3])
+  ```
+
+  Resultado esperado:
+  ```python
+  V
+  Víde
+  Vídeo Python
+  VdoPto
+  Curso
+  Python
+  VePh
+  ```
+
+---
+### Métodos de Análise de *Strings*
+
+Estas são funções e métodos que servem para investigar a estrutura do texto e extrair dados quantitativos ou lógicos:
+
+- **`len(frase)`**: Função interna mede o comprimento do texto. Ela retorna um número inteiro correspondente ao total de caracteres e espaços que a string ocupa na memória.
+- **`frase.count('o')`**: Método que conta a quantidade exata de vezes que o caractere minúsculo `'o'` surge no texto.
+- **`frase.count('o', 0, 13)`**: Executa a contagem da letra `'o'` por meio de um fatiamento interno, restringindo a busca entre os índices 0 e 12.
+- **`frase.find('deo')`**: Método que procura por uma sequência específica e aponta o índice exato onde essa sub-string se iniciou.
+- **`frase.find('Android')`**: Observamos que, caso o método `find()` busque por uma palavra inexistente no texto, o Python retorna `-1` para indicar a ausência de correspondência.
+- **`'Curso' in frase`**: O operador lógico `in` valida a existência de um termo dentro da string. O resultado gerado é um valor booleano: `True` ou `False`.
+
+  ```python
+  frase = 'Curso em Vídeo Python'
+  print(len(frase))
+  print(frase.count('o'))
+  print(frase.count('o', 0, 13))
+  print(frase.find('deo'))
+  print(frase.find('Android'))
+  print('Curso' in frase)
+  ```
+
+  Resultado esperado:
+  ```python
+  21
+  2
+  1
+  6
+  -1
+  True
+  ```
+
+---
+### Métodos de Transformação de *Strings*
+
+Um conceito teórico também fundamental: as strings em Python são **imutáveis**. Elas não permitem alterar diretamente um único caractere de uma variável existente por meio de indexação direta (como fazer `frase[0] = 'J'`).
+
+Observamos que os métodos de transformação não modificam a string original na memória; eles geram uma nova versão modificada.
+
+Para que a alteração seja permanente na variável, é necessária uma reatribuição (ex: `frase = frase.upper()`).
+
+- **`frase.replace('Python', 'Android')`**: Esse método substitui uma palavra ou sequência por outra dentro do texto de forma dinâmica.
+- **`frase.upper()`**: Comando para converter todos os caracteres minúsculos em maiúsculos.
+- **`frase.lower()`**: Realiza a operação inversa, convertendo as letras maiúsculas da string em minúsculas.
+- **`frase.capitalize()`**: Reduz todas as letras para minúsculo e transforma estritamente o primeiro caractere da frase em maiúsculo.
+- **`frase.title()`**: Realiza uma análise por palavra, identifica as quebras de palavras pelos espaços em branco e capitaliza a primeira letra de cada uma.
+
+  ```python
+  frase = 'Curso em Vídeo Python'
+  print(frase.replace('Python', 'Android'))
+  print(frase.upper())
+  print(frase.lower())
+  print(frase.capitalize())
+  print(frase.title())
+  ```
+
+  Resultado esperado:
+  ```python
+  Curso em Vídeo Android
+  CURSO EM VÍDEO PYTHON
+  curso em vídeo python
+  Curso em vídeo python
+  Curso Em Vídeo Python
+  ```
+
+#### Remoção de Espaços Excedentes (Tratamento de Dados)
+
+Como espaços em branco desnecessários, inseridos acidentalmente no início ou no fim de strings, podem ser higienizados com os seguintes métodos:
+
+- **`frase.strip()`**: O método elimina todos os espaços em branco presentes nas extremidades do texto. Os espaços internos que separam as palavras são preservados.
+- **`frase.rstrip()`**: Comando para remover apenas os espaços em branco localizados ao final do texto.
+- **`frase.lstrip()`**: Remove apenas os espaços desnecessários localizados no começo do texto.
+
+  ```python
+  texto = '   Python   '
+  print(texto.strip())
+  print(texto.rstrip())
+  print(texto.lstrip())
+  ```
+
+  Resultado esperado:
+  ```python
+  Python
+  '   Python'
+  'Python   '
+  ```
+
+---
+### Divisão e Junção de Textos
+
+Na sequência, formas de dividir e unir textos de maneira prática:
+
+- **`frase.split()`**: Este é um método que divide o texto original, gerando uma estrutura de dados do tipo lista. Por padrão, os cortes ocorrem nos espaços em branco. Cada palavra isolada torna-se um elemento dessa lista e passa a contar com uma indexação interna própria.
+- **`'-'.join(frase)`**:Este comando realiza o processo inverso da divisão. Ele agrupa os elementos de uma lista de palavras em uma nova string única, inserindo o caractere conector especificado entre eles.
+
+  ```python
+  frase = 'Curso em Vídeo Python'
+  palavras = frase.split()
+  print(palavras)
+  print('-'.join(palavras))
+  ```
+
+  Resultado esperado:
+  ```python
+  ['Curso', 'em', 'Vídeo', 'Python']
+  Curso-em-Vídeo-Python
+  ```
+
+---
+### Impressão de Textos Longos
+
+Por fim, uma maneira prática de exibir textos longos na tela, como menus ou instruções, mantendo as quebras de linha originais, sem o uso de múltiplos comandos `print()` linha por linha, é:
+
+Iniciar o comando `print`, abrir três aspas seguidas `"""`, digitar todo o texto com suas respectivas quebras de linha e fechar com mais três aspas `"""`.
+
+  ```python
+  print("""
+  Este é um texto
+  com várias linhas
+  e formatação preservada.
+  """)
+  ```
+
+A formatação original é mantida integralmente na saída do terminal.
+
+---
+### Relação com os Exercícios 21 a 26
+
+Para aprofundamento prático, trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de strings de forma gradual e objetiva.
