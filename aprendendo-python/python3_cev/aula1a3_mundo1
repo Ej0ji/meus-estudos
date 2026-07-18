@@ -2,18 +2,18 @@
 
 ## Sumário
 
-- [Aula 1 - Seja um programador!](#aula-1---seja-um-programador)
-  - [O que é ser um programador?](#o-que-e-ser-um-programador)
-- [Aula 2 - Para que serve Python?](#aula-2---para-que-serve-python)
-  - [De onde vem o Python?](#de-onde-vem-o-python)
-  - [Evolução e manutenção](#evolucao-e-manutencao)
-  - [Casos de uso da linguagem](#casos-de-uso-da-linguagem)
+- [Aula 1 - Seja um Programador!](#aula-1---seja-um-programador)
+  - [O que é Ser um Programador?](#o-que-é-ser-um-programador)
+- [Aula 2 - Para que Serve Python?](#aula-2---para-que-serve-python)
+  - [De Onde Vem o Python?](#de-onde-vem-o-python)
+  - [Evolução e Manutenção](#evolução-e-manutenção)
+  - [Casos de Uso da Linguagem](#casos-de-uso-da-linguagem)
 - [Aula 3 - Instalando Python](#aula-3---instalando-python)
 
 ---
-## Aula 1 - Seja um programador!
+## Aula 1 - Seja um Programador!
 
-### O que é ser um programador?
+### O Que é Ser um Programador?
 
 Ser um programador nada mais é, do que ser uma pessoa que soluciona problemas passo-a-passo de forma lógica, quebrando os problemas em partes menores, utilizando ferramentas e linguagens digitais para tal, isto é, comunicar-se com máquinas utilizando linguagens que estas entendem. Para que assim sigam instruções lógicas definidas pelo programador e realizem processamentos afim de solucionar algo.
 
@@ -21,9 +21,9 @@ Não é preciso nenhum conhecimento prévio avançado em matemática, inglês, f
 
 Programar é um percurso de evolução, onde podemos evoluir nossas habilidades lógicas, de organização, criativas e colaborativas!
 
-## Aula 2 - Para que serve Python?
+## Aula 2 - Para que Serve Python?
 
-### De onde vem o Python?
+### De Onde Vem o Python?
 
 Python foi criado no ano de 1989, na Holanda, por Guido van Rossum, enquanto Guido trabalhava na CWI (Centro de Matemática e Computação de Amsterdã).
 
@@ -41,7 +41,7 @@ O nome não vem da cobra, mas sim no grupo de comédia britânico: **Monty Pytho
 Guido gostava do humor do programa e queria um nome **curto, diferente e memorável**.
 
 ---
-### Evolução e manutenção
+### Evolução e Manutenção
 
 Atualmente, a linguagem é mantida por uma organização sem fins lucrativos chamada de **Python Software Foundation (PSF)**
 
@@ -53,7 +53,7 @@ Recebe apoio de grandes empresas como:
 - Outras grandes companhias de tecnologia.
 
 ---
-### Casos de uso da linguagem
+### Casos de Uso da Linguagem
 
 Por ser uma linguagem:
 
