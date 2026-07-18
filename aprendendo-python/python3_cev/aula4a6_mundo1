@@ -2,20 +2,20 @@
 
 ## Sumário
 
-- [Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios](#aula-4--primeiros-comandos-em-python3--exercício-0--desafios)
-  - [Como exibir uma mensagem? - Função 'print()'](#como-exibir-uma-mensagem---função-print)
-  - [Concatenação e o uso de sinais](#concatenacao-e-o-uso-de-sinais)
-  - [Variáveis e entrada de dados através de funções 'inputs()'](#variaveis-e-entrada-de-dados-atraves-de-funcoes-inputs)
-  - [Relação com os exercícios 0](#relacao-com-os-exercicios-0)
+- [Aula 4 – Primeiros Comandos em Python3 + Exercício 0 + Desafios](#aula-4--primeiros-comandos-em-python3--exercício-0--desafios)
+  - [Como Exibir uma Mensagem? - Função 'print()'](#como-exibir-uma-mensagem---função-print)
+  - [Concatenação e o Uso de Sinais](#concatenação-e-o-uso-de-sinais)
+  - [Variáveis e Entrada de Dados Através de Funções 'inputs()'](#variáveis-e-entrada-de-dados-através-de-funções-inputs)
+  - [Relação com o Exercício 0 + Desafios](#relação-com-o-exercício-0--desafios)
 - [Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2](#aula-5---instalando-o-pycharm-e-o-qpython3--exercícios-1-e-2)
-  - [Relação com os exercícios 1 a 2](#relacao-com-os-exercicios-1-a-2)
-- [Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios](#aula-6---tipos-primitivos-e-saída-de-dados--exercícios-3-e-4--desafios)
-  - [Tipos Primitivos em entradas e saídas e *Type Casting* (Mudança de tipos)](#tipos-primitivos-em-entradas-e-saidas-e-type-casting-mudanca-de-tipos)
-  - [Métodos de Verificação de Tipos (is...)](#metodos-de-verificacao-de-tipos-is)
-  - [Relação com os exercícios 3 a 4](#relacao-com-os-exercicios-3-a-4)
+  - [Relação com os Exercícios 1 a 2](#relação-com-os-exercícios-1-a-2)
+- [Aula 6 - Tipos Primitivos e Saída de Dados + Exercícios 3 e 4 + Desafios](#aula-6---tipos-primitivos-e-saída-de-dados--exercícios-3-e-4--desafios)
+  - [Tipos Primitivos em Entradas e Saídas e *Type Casting* (Mudança de Tipos)](#tipos-primitivos-em-entradas-e-saídas-e-type-casting-mudança-de-tipos)
+  - [Métodos de Verificação de Tipos (is...)](#métodos-de-verificação-de-tipos-is)
+  - [Relação com os Exercícios 3 a 4](#relação-com-os-exercícios-3-a-4)
 
 ---
-## Aula 4 – Primeiros comandos em Python3 + Exercício 0 + Desafios
+## Aula 4 – Primeiros Comandos em Python3 + Exercício 0 + Desafios
 
 Esta aula abordará os conceitos e comandos bases de:
 
@@ -28,13 +28,13 @@ Esta aula abordará os conceitos e comandos bases de:
 Então, antes de tudo poder exibir uma mensagem na tela, pode ser um bom ínicio de interação com programação.
 
 ---
-### Como exibir uma mensagem? - Função 'print()'
+### Como Exibir uma Mensagem? - Função 'print()'
 
 Para exibir mensagens, textos, resultados de cálculos e valores, pode-se utilizar a função 'print()' 
 
     *OBS: O conceito de funções será visto mais a frente no curso*
 
-#### Exibição de textos:
+#### Exibição de Textos:
 
 Tudo que for exibido com o intuito de expressar um texto deve estar entre aspas (no Python podem ser tanto aspas simples quanto duplas, porém o usual são as simples):
 
@@ -50,7 +50,7 @@ print('7' + '4')
 Resultado: 74 (string)
 ```
 
-#### Exibição de números e/ou cálculos:
+#### Exibição de Números e/ou Cálculos:
 
 Tudo o que for exibido com o intuito de ser usado em cálculos ou números **não** deve conter aspas:
 
@@ -70,11 +70,11 @@ O Python diferencia claramente:
 Essa diferença é essencial para evitar erros futuros.
 
 ---
-### Concatenação e o uso de sinais
+### Concatenação e o Uso de Sinais
 
 O conceito de concatenação é essencial dentro do mundo da programação e, como visto acima, por exemplo, é possível concatenar mensagens que serão retornadas ao usuário, porém existem alguns pontos de atenção sobre as formas de se realizar a concatenação:
 
-#### Concatenação utilizando o símbolo de adição '+':
+#### Concatenação Utilizando o Símbolo de Adição '+':
 
 O símbolo de adição '+' em Python, além de ser, um operador de adição entre números, também possui diversas funções e uma delas é a concatenação de texto com texto, exclusivamente. Isto é, é possível concatenar textos, se e somente se tudo for string.
 
@@ -95,7 +95,7 @@ print('7' + '7')
 Resultado: '77'
 ```
 
-#### Concatenação utilizando vírgula:
+#### Concatenação Utilizando Vírgula:
 
 É o método mais seguro e versátil para concatenar dados de naturezas diferentes, pois concatena texto, número, etc.
 
@@ -117,9 +117,9 @@ Resultado: 7 7 # (7 string 7 string)
 ```
 
 ---
-### Variáveis e entrada de dados através de funções 'inputs()'
+### Variáveis e Entrada de Dados Através de Funções 'inputs()'
 
-#### O que são variáveis?
+#### O Que São Variáveis?
 
 Além de exibir mensagens, um segundo ponto importante para se entender no começo do estudo de programação em Python é o de **variáveis**.
 
@@ -127,7 +127,7 @@ Além de exibir mensagens, um segundo ponto importante para se entender no come�
 
 Daí a importância destas variáveis. Uma vez que o objetivo final de todo e qualquer programa é manipular dados para gerar ações. Os dados podem ser definidos de forma prática, como sendo o 'sangue' de um programa.
 
-#### Regras sintáticas das variáveis
+#### Regras Sintáticas das Variáveis
 
 Ao criar as tais variáveis, é preciso seguir algumas regras básicas para que seja possível definí-las com sucesso dentro de um programa.
 
@@ -152,7 +152,7 @@ nome = 'Guanabara'
 - **Sensibilidade** (*Case Sensitive*): Nomes com letras maiúsculas e minúsculas são tratados como variáveis diferentes. Ex: idade <> Idade.
 
 ---
-#### Atribuição de variáveis através de 'input()'
+#### Atribuição de Variáveis Através de 'input()'
 
 Uma das possíveis formas de inserir dados em variáveis é a função 'input()'. Com esta, é criado para o usuário, um local para inserir dados através do terminal.
 
@@ -163,7 +163,7 @@ Resultado: Escreva seu nome: ____
 ```
 
 ---
-### Relação com os exercícios 0
+### Relação com o Exercício 0 + Desafios
 
 Para aprofundamento prático, consulte:
 
@@ -179,7 +179,7 @@ Para facilitar o aprendizado em Python, a instalação de uma *IDE* (*Integrated
 Verifique a documentação no [site da JetBrains para instalar o PyCharm](https://www.jetbrains.com/pycharm/).
 
 ---
-### Relação com os exercícios 1 a 2
+### Relação com os Exercícios 1 a 2
 
 Para aprofundamento prático, consulte:
 
@@ -188,7 +188,7 @@ Para aprofundamento prático, consulte:
 
 Esses exercícios complementam a prática inicial com o Python, reforçando a ideia de como escrever pequenos programas, testar comandos e observar o comportamento das instruções em tempo de execução. Eles ajudam a fortalecer a confiança do estudante ao começar a construir soluções simples e direto no terminal.
 
-## Aula 6 - Tipos primitivos e saída de dados + Exercícios 3 e 4 + Desafios
+## Aula 6 - Tipos Primitivos e Saída de Dados + Exercícios 3 e 4 + Desafios
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
 
@@ -206,7 +206,7 @@ Resultado: <class 'str'>
 Porém é possível redefinir os tipos desses valores.
 
 ---
-### Tipos Primitivos em entradas e saídas e *Type Casting* (Mudança de tipos)
+### Tipos Primitivos em Entradas e Saídas e *Type Casting* (Mudança de Tipos)
 
 Antes de iniciar as mudanças de tipo de dados é preciso, obviamente, entender quais são os tipos primitivos. Aqui vão os mais comuns e usuais:
 
@@ -254,7 +254,7 @@ Os métodos de verificação de tipos (is...) são testes lógicos nativos do Py
 - .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
 
 ---
-### Relação com os exercícios 3 a 4
+### Relação com os Exercícios 3 a 4
 
 Para aprofundamento prático, consulte:
 
