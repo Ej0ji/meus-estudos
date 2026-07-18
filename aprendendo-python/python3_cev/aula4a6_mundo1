@@ -27,6 +27,10 @@ Esta aula abordará os conceitos e comandos bases de:
 
 Então, antes de tudo poder exibir uma mensagem na tela, pode ser um bom ínicio de interação com programação.
 
+```
+OBS: Durante os exercícios é interessante observar que, para determinados problemas, os comandos ou conceitos apresentados durante as aulas não serão suficientes. Por isso é crucial pesquisar proativamente técnicas e conceitos, diferentes dos apresentados nas aulas, para resolver os exercícios a seguir.
+```
+
 ---
 ### Como Exibir uma Mensagem? - Função 'print()'
 
