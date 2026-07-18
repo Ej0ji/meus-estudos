@@ -4,7 +4,7 @@
 # Criar um programa que leia um número de 0 a 9999 e exiba na tela cada um dos dígitos separados por unidade, dezena, centena e milhar, utilizando lógica de string ou matemática.
 
 # OPÇÃO 1 - LÓGICA DE STRINGS ----------------------------------------
-numero = input('Digite um número de 0 a 9999 no formato xxxx: ')
+numero = input('Digite um número de 0 a 9999 no formato xxxx (ex: 0012 e 2134): ')
 
 print('-' * 30)
 
@@ -23,4 +23,8 @@ print('-' * 30)
 
 print('As casas decimais do número {} são:'.format(numero))
 
+print('UNIDADES: {}'.format(numero // 1 % 10))
+print('DEZENAS: {}'.format(numero // 10 % 10))
+print('CENTENAS: {}'.format(numero // 100 % 10))
+print('MILHARES: {}'.format(numero // 1000 % 10))
 
