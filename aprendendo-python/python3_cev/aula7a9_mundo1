@@ -2,13 +2,13 @@
 
 ## Sumário
 
-- [Aula 7 - Operadores Aritméticos](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
+- [Aula 7 - Operadores Aritméticos + Exercícios 5 a 15](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
   - [Introdução aos Operadores Aritméticos](#introdução-aos-operadores-aritméticos)
   - [Ordem de Precedência](#ordem-de-precedência)
   - [Operações com Strings e Recursos Especiais do Python](#operações-com-strings-e-recursos-especiais-do-python)
   - [Formatação Avançada de Saída (*Print*)](#formatação-avançada-de-saída-print)
   - [Relação com os Exercícios 5 a 15](#relação-com-os-exercícios-5-a-15)
-- [Aula 8 - Utilizando Módulos](#aula-8---utilizando-módulos--exercícios-16-a-21--desafios)
+- [Aula 8 - Utilizando Módulos + Exercícios 16 a 20 + Desafios](#aula-8---utilizando-módulos--exercícios-16-a-20--desafios)
   - [Introdução ao Uso de Módulos](#introdução-ao-uso-de-módulos)
   - [Por Que Usar Módulos?](#por-que-usar-módulos)
   - [Formas de Importação de Módulos](#formas-de-importação-de-módulos)
@@ -17,7 +17,7 @@
   - [Como Descobrir o Que um Módulo Oferece](#como-descobrir-o-que-um-módulo-oferece)
   - [Boas Práticas ao Trabalhar com Módulos](#boas-práticas-ao-trabalhar-com-módulos)
   - [Relação com os Exercícios 16 a 20](#relação-com-os-exercícios-16-a-20)
-- [Aula 9 - Manipulando Texto](#aula-9---manipulando-texto--exercícios-22-a-27--desafios)
+- [Aula 9 - Manipulando Texto + Exercícios 21 a 26](#aula-9---manipulando-texto--exercícios-21-a-26)
   - [O Conceito de String e o Gerenciamento na memória](#o-conceito-de-string-e-o-gerenciamento-na-memória)
   - [Técnica de Fatiamento de *String* (*Slicing*)](#técnica-de-fatiamento-de-string-slicing)
   - [Métodos de Análises de *Strings*](#métodos-de-análise-de-strings)
@@ -277,7 +277,7 @@ Para aprofundamento prático, consulte:
 
 Os exercícios propostos nessa parte do curso ajudam a consolidar os conceitos abordados na aula, principalmente o uso de operadores aritméticos, a formatação de saída e a lógica básica de programação. Eles são uma excelente forma de praticar a escrita de código de maneira gradual e objetiva.
 
-## Aula 8 - Utilizando Módulos + Exercícios 16 a 21 + Desafios
+## Aula 8 - Utilizando Módulos + Exercícios 16 a 20 + Desafios
 
 ### Introdução ao Uso de Módulos
 
