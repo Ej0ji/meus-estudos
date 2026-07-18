@@ -692,4 +692,16 @@ A formatação original é mantida integralmente na saída do terminal.
 ---
 ### Relação com os Exercícios 21 a 26
 
-Para aprofundamento prático, trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de strings de forma gradual e objetiva.
+Para aprofundamento prático, verifique os exercícios a seguir:
+
+- <a href="../python3_cev/exe021.py">Exercício 21</a>
+- <a href="../python3_cev/exe022.py">Exercício 22</a>
+- <a href="../python3_cev/exe023.py">Exercício 23</a>
+- <a href="../python3_cev/exe024.py">Exercício 24</a>
+- <a href="../python3_cev/exe025.py">Exercício 25</a>
+- <a href="../python3_cev/exe026.py">Exercício 26</a>
+
+Trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de strings de forma gradual e objetiva.
+
+---
+Ir para: <a href="../python3_cev/aula10a11_mundo1">Aula 10 a 11</a>
