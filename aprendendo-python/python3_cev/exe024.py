@@ -3,7 +3,7 @@
 
 # Criar um programa que leia o nome de uma pessoa e identifique se ela possui "Silva" em qualquer parte do nome.
 
-nome_pessoa = input('Digite um nome de uma pessoa: ')
+nome_pessoa = input('Digite um nome de uma pessoa: ').strip()
 
 nome_pessoa_transformada = nome_pessoa.title()
 

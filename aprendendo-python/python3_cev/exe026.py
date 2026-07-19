@@ -3,7 +3,7 @@
 
 # Escrever um programa que leia o nome completo de uma pessoa e apresente, de forma separada, apenas o primeiro e o último nome.
 
-nome_completo = input('Digite um nome completo: ')
+nome_completo = input('Digite um nome completo: ').strip()
 
 nome_completo_transformado = nome_completo.title()
 

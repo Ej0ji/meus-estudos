@@ -3,8 +3,8 @@
 
 # Fazer um programa que leia uma frase e exiba quantas vezes aparece uma letra especificada pelo usuário, em que posição ela aparece a primeira vez e em que posição ela surge pela última vez.
 
-frase = input('Digite uma frase qualquer: ')
-letra_a_ser_buscada = input('Digite uma letra para buscar dentro da frase: ')
+frase = input('Digite uma frase qualquer: ').strip()
+letra_a_ser_buscada = input('Digite uma letra para buscar dentro da frase: ').strip()
 
 print('-' * 45)
 

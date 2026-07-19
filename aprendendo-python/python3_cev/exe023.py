@@ -3,11 +3,9 @@
 
 # Construir um script que leia o nome de uma cidade e informe se ela começa ou não com a palavra "Santo".
 
-nome_cidade = input('Digite o nome de uma cidade: ')
+nome_cidade = input('Digite o nome de uma cidade: ').strip()
 
-nome_cidade_limpa = nome_cidade.strip()
-
-nome_cidade_transformada = nome_cidade_limpa.title()
+nome_cidade_transformada = nome_cidade.title()
 
 nome_comeca_com_santo = 'Santo' in nome_cidade_transformada[:(nome_cidade_transformada.find(' '))]
 
