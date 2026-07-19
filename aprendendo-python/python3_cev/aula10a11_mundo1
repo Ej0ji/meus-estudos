@@ -1,3 +1,271 @@
 # Aula 10 a 11 do Curso Python 3 - Mundo 1
 
 ## Sumário
+
+- [Aula 10 - Condições (Parte 1) + Exercícios 27 a 34](#aula-10---condições-parte-1--exercícios-27-a-34)
+    - [Compreendendo a Lógica de Condicionais](#compreendendo-a-lógica-de-condicionais)
+    - [A Anatomia do *if* e *else* no Python](#a-anatomia-do-if-e-else-no-python)
+    - [Exemplos Práticos Comentados Passo a Passo](#exemplos-práticos-comentados-passo-a-passo)
+    - [Relação com os Exercícios 27 a 34](#relação-com-os-exercícios-27-a-34)
+- [Aula 11 - Cores no Terminal](#aula-11---cores-no-terminal)
+    - [Introdução: O Toque de Estética no Mundo dos Fundamentos](#introdução-o-toque-de-estética-no-mundo-dos-fundamentos)
+    - [O Padrão ANSI e as Sequências de Escape](#o-padrão-ansi-e-as-sequências-de-escape)
+    - [Modos Práticos de Implementação](#modos-práticos-de-implementação)
+    - [Relação com o Exercício 35](#relação-com-o-exercício-35)
+
+---
+## Aula 10 - Condições (Parte 1) + Exercícios 27 a 34
+
+### Introdução a Estruturas Condicionais
+
+Até este momento da nossa jornada em Python, todos os programas que construímos funcionam como uma linha de produção industrial: rígidos, lineares e previsíveis (os quais podemos chamar de códigos com estruturas sequenciais).
+
+O código executa a linha 1, passa para a linha 2, depois para a linha 3, e assim sucessivamente, sem nunca questionar o ambiente ou os dados.
+
+No entanto, o mundo real não funciona dessa forma. Tomamos decisões a cada segundo: Se estiver chovendo, nós levamos um guarda-chuva; se o sinal estiver vermelho, o carro para. A partir de agora, daremos esse mesmo "poder de escolha" aos programas. As Estruturas Condicionais transformam linhas de código estáticas em programas inteligentes capazes de reagir, analisar cenários e mudar o próprio comportamento em tempo real.
+
+---
+### Compreendendo a Lógica de Condicionais
+
+#### A Metáfora do Fluxo de Trânsito
+
+Imagine um algoritmo como um carro navegando por uma estrada.
+
+```
+[ Início do Programa ]
+          │
+          ▼
+   [ Estrada Reta ] ───► (Estrutura Sequencial: Todos passam por aqui)
+          │
+          ▼
+ 🚦[ Bifurcação? ]🚦 ───► (Estrutura Condicional: Momento da Decisão)
+          ├─── [ Caminho da Esquerda ] ───► (Executa SE for Verdadeiro)
+          └─── [ Caminho da Direita ]  ───► (Executa SE for Falso)
+          │
+          ▼
+  [ Destino Final ] ───► (O fluxo se une novamente até o fim)
+```
+
+Para entender a dinâmica de maneira simples, nós dividimos esse conceito em **duas categorias fundamentais**:
+
+- **Condição Simples (if)**: Existe apenas uma ação especial a ser tomada se o cenário for favorável. Se a condição for falsa, o programa ignora o desvio e segue em frente.
+
+- **Condição Composta (if / else)**: O programa se depara com dois caminhos mutuamente exclusivos.
+    - Se a condição for verdadeira, nós seguimos pelo caminho A;
+    - Se for falsa, nós obrigatoriamente seguimos pelo caminho B. Nunca os dois caminhos serão executados simultaneamente.
+
+---
+### A Anatomia do *if* e *else* no Python
+
+O Python exige uma sintaxe limpa, mas que requer atenção total a dois elementos reguladores: os **dois-pontos (:)** e a **indentação**.
+
+```Python
+if condição_for_verdadeira:
+    # Use a tecla TAB para recuar este bloco!
+    # Tudo o que estiver recuado acontecerá SE a condição for real.
+else:
+    # Alinhe o else perfeitamente com o if.
+    # Não esqueça os dois-pontos!
+    # Este bloco acontecerá SE a condição for mentira.
+```
+
+#### O que é Indentação?
+
+Em outras linguagens, os programadores utilizam chaves `{}` para indicar onde começa e termina um bloco de código. No Python, fazemos isso apenas empurrando o texto para a direita usando a tecla *Tab*. Se o código for indentado incorretamente, o Python apresentará um erro de sintaxe e não executará o programa.
+
+---
+### Exemplos Práticos Comentados Passo a Passo
+
+#### **Exemplo 1**: O Verificador de Nomes Dinâmico
+
+Analise o código abaixo. Ele lê o nome de uma pessoa e decide se vai tecer um elogio exclusivo ou uma resposta padrão.
+
+```Python
+# Passo 1: Captura e limpa o texto digitado pelo usuário
+nome = str(input('Qual é o seu nome? ')).strip()
+
+# Passo 2: O Teste Lógico (O programa faz uma pergunta)
+if nome == 'Gustavo':
+    # Bloco Verdadeiro (Só executa se o nome for exatamente 'Gustavo')
+    print('Que nome lindo você tem!')
+else:
+    # Bloco Falso (Executa para QUALQUER outro nome digitado)
+    print('Seu nome é tão normal.')
+
+# Passo 3: Fluxo Neutro (Executa sempre, independente do nome)
+print('Bom dia, {}!'.format(nome))
+```
+
+#### **Exemplo 2**: O Calculador de Médias com *Feedback*
+
+Aqui, calculamos a média e aplicamos uma regra de corte pedagógica (Média 6.0).
+
+```Python
+n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+média = (n1 + n2) / 2
+
+print('A sua média foi {:.1f}',format(média))
+
+# Aplicação da estrutura condicional composta
+if média >= 6.0:
+    print('Sua média foi boa! PARABÉNS!')
+else:
+    print('Sua média foi ruim! ESTUDE MAIS!')
+```
+
+#### **Condição Simplificada (Operador Ternário)**
+
+Se a sua decisão for extremamente simples (apenas exibir uma palavra ou outra baseada na condição), você pode resumir a estrutura inteira em uma única linha. Veja como o código ganha velocidade de leitura:
+
+```Python
+print('PARABÉNS!' if média >= 6.0 else 'ESTUDE MAIS!')
+# Como ler essa linha em voz alta: "Imprima 'PARABÉNS!' se a média for maior ou igual a 6.0; caso contrário (senão), imprima 'ESTUDE MAIS!'".
+```
+---
+### Relação com os Exercícios 27 a 34
+
+Para aprofundamento prático, consulte:
+
+- <a href="../python3_cev/exe027.py">Exercício 27</a>
+- <a href="../python3_cev/exe028.py">Exercício 28</a>
+- <a href="../python3_cev/exe029.py">Exercício 29</a>
+- <a href="../python3_cev/exe030.py">Exercício 30</a>
+- <a href="../python3_cev/exe031.py">Exercício 31</a>
+- <a href="../python3_cev/exe032.py">Exercício 32</a>
+- <a href="../python3_cev/exe033.py">Exercício 33</a>
+- <a href="../python3_cev/exe034.py">Exercício 34</a>
+
+Os exercícios desta aula, englobam o conceito de estruturas condicionais, mesclando com técnicas aprendidas durante outras aulas, como métodos de limpeza, transformação e operadores. 
+
+---
+## Aula 11 - Cores no Terminal
+
+### Introdução: O Toque de Estética no Mundo dos Fundamentos
+
+Alcançamos o encerramento do Mundo 1 do curso de Python! Ao longo desta jornada inicial, consolidamos os alicerces essenciais da programação: realizamos a instalação do ambiente de desenvolvimento, executamos comandos básicos, desvendamos os operadores aritméticos, lógicos e relacionais, incorporamos módulos e dominamos as estruturas condicionais básicas.
+
+Agora, nós daremos um passo extra muito interessante para enriquecer a experiência visual dos nossos programas: nós aprenderemos a inserir cores diretamente no terminal de comandos. Embora este recurso não modifique a lógica algorítmica por trás dos programas, ele transformará a interface visual dos nossos scripts. Isso tornará as interações com o usuário muito mais amigáveis, profissionais e organizadas.
+
+---
+### O Padrão ANSI e as Sequências de Escape
+
+Para colorir o terminal sem depender da instalação de bibliotecas externas complexas, nós utilizamos o padrão de normalização internacional *ANSI (American National Standards Institute)*. Este sistema funciona por meio de *escape sequences* (sequências de escape), que são códigos especiais interpretados diretamente pelos interpretadores de linha de comando.
+
+No Python, toda sequência de cor inicia obrigatoriamente com o caractere de escape de barra invertida combinado com um código numérico: `\033[`. Para finalizar a configuração da cor e indicar ao terminal onde a formatação termina, utilizamos a letra minúscula `m`. Entre a abertura do colchete e o m, nós inserimos os parâmetros numéricos de formatação separados por ponto e vírgula (';').
+
+A estrutura básica de configuração obedece à seguinte ordem padrão:
+
+```Python
+\033[<Estilo>;<Texto>;<Fundo>m
+```
+
+---
+### A Tabela de Códigos ANSI
+
+Dividimos os parâmetros numéricos em três grandes blocos de controle para facilitar a memorização. Veja abaixo como cada um funciona:
+
+ - **1.** Estilo (Unidades)
+
+Os códigos de estilo controlam o comportamento e a aparência da fonte. Os que funcionam melhor no terminal do Python são:
+
+```
+0: Sem estilo nenhum (restaura o padrão do terminal).
+
+1: Aplica o efeito Negrito (*Bold*).
+
+4: Adiciona um Sublinhado (*Underline*).
+
+7: Ativa a Inversão (*Negative*), que troca a cor do texto com a cor do fundo.
+```
+
+ - **2.** Cor do Texto (De 30 a 37)
+
+Os códigos definem a tonalidade das letras exibidas:
+
+```
+30: Branco
+
+31: Vermelho
+
+32: Verde
+
+33: Amarelo
+
+34: Azul
+
+35: Magenta (Roxo)
+
+36: Ciano
+
+37: Cinza (Cor padrão da maioria dos terminais)
+```
+
+- **3.** Cor do Fundo / Background (De 40 a 47)
+
+A paleta de cores para o fundo da tela segue rigorosamente a mesma ordem de cores do texto, alterando apenas a dezena inicial do código para o número 4:
+
+```
+40: Branco | 41: Vermelho | 42: Verde | 43: Amarelo | 44: Azul | 45: Magenta | 46: Ciano | 47: Cinza
+```
+
+---
+### Modos Práticos de Implementação
+
+Nós podemos aplicar essas sequências de escape no Python através de diferentes técnicas, que variam de acordo com o nível de organização do código.
+
+#### **Técnica 1**: Inserção Direta na *String*
+
+Nós inserimos o código *ANSI* diretamente dentro do texto no método `print()`. É fundamental adicionar o código de limpeza `\033[m` ao final da frase. Se nós esquecermos de fechá-lo, o terminal manterá a cor ativa para todo o restante das saídas do sistema.
+
+```Python
+# Texto com letra vermelha, fundo amarelo e em negrito
+print('\033[1;31;43mOlá, Mundo!\033[m')
+
+# Texto com letra branca, fundo verde, sem estilo de fonte
+print('\033[30;42mSucesso no terminal!\033[m')
+```
+
+#### **Técnica 2**: Utilização com o Método `.format()`
+
+Para evitar que o texto fique poluído com tantos códigos numéricos juntos, nós podemos isolar as sequências de escape utilizando os placeholders de chaves `{}` combinados com o método tradicional `.format()`.
+
+```Python
+nome = "Guanabara"
+# Injetamos o código de abertura, a variável e o código de fechamento
+print("Muito prazer em te conhecer, {}{}{}!".format('\033[4;34m', nome, '\033[m'))
+```
+
+#### **Técnica 3**: Otimização Avançada com Dicionários de Cores
+
+Quando nós desenvolvemos sistemas maiores, a presença constante de códigos como `\033[34m` dificulta a leitura do programa. Por isso, nós criamos uma estrutura limpa utilizando dicionários. Esta técnica mapeia palavras-chave fáceis de ler para os seus respectivos códigos de escape.
+
+```
+OBS: O conceito de dicionários será abordados mais a frente durante o curso.
+```
+
+```Python
+# Nós criamos um dicionário organizador de cores
+cores = {
+    'limpa': '\033[m',
+    'azul': '\033[34m',
+    'amarelo': '\033[33m',
+    'preto_e_branco': '\033[7;30m'
+}
+
+nome = "Guanabara"
+
+# Nós executamos o print chamando os rótulos amigáveis do dicionário
+print("Olá! Muito prazer, {}{}{}!".format(cores['amarelo'], nome, cores['limpa']))
+print("Esse texto terá o padrão {}{}{}!".format(cores['preto_e_branco'], nome, cores['limpa']))
+```
+
+---
+### Relação com o Exercício 35
+
+O exercício final do mundo 1 do curso de Python é uma revisão completa de todos os outros exercícios, pois o intuito do mesmo, é de estilizar as saídas de todos os exercícios ocorridos até o momento.
+
+- <a href="../python3_cev/exe035">Exercício 35</a>
+
+---
+Ir para: <a href="../python3_cev/aula12a13_mundo2">Mundo 2 - Aula 12 a 13</a>
