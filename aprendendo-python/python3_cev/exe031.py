@@ -7,21 +7,11 @@ ano = int(input('Insira um ano qualquer: '))
 
 print('-' * 40)
 
-# É um ano secular? (ex: 1700, 1900)
-if ano % 100 == 0:
-    # Se sim, é divisível por 400?
-    if ano % 400 == 0:
-        # Se sim, é um ano bissexto
-        print('{} é um ano bissexto'.format(ano))
-    else:
-        # Se não, não é um ano bissexto
-        print('{} não é um ano bissexto'.format(ano))
+# É um ano normal divisível por 4 OU, um ano secular divisível por 400? (ex: 1700, 1900)
+if ano % 100 != 0 and ano % 4 == 0 or ano % 400 == 0:
+    # Se sim, é um ano bissexto
+    print('{} é um ano bissexto'.format(ano))
 else:
-    # Se não, é divisível por 4?
-    if ano % 4 == 0:
-        # Se sim, é um ano bissexto
-        print('{} é um ano bissexto'.format(ano))
-    else:
-        # Se não, não é um ano bissexto
-        print('{} não é um ano bissexto'.format(ano))
+    # Se não, não é um ano bissexto
+    print('{} não é um ano bissexto'.format(ano))
 
