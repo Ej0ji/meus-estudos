@@ -1,4 +1,4 @@
-# Exercício 26 - Aula 9
+# Exercício 27 - Aula 10
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
 # Desenvolver um programa que faça o computador "pensar" em um número inteiro aleatório entre 0 e 5. Peça para o usuário tentar descobrir qual foi o número escolhido. O programa deverá escrever na tela se o usuário venceu ou perdeu.
