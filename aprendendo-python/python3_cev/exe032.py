@@ -11,20 +11,18 @@ lista_numeros.append(numero)
 numero = float(input('Digite o terceiro número: '))
 lista_numeros.append(numero)
 
-maior_numero = 0
-menor_numero = 0
+print('-' * 40)
+
+maior_numero = lista_numeros[0]
+menor_numero = lista_numeros[0]
 
 # Encontra maior valor (DE FORMA BRUTA) da lista
-if lista_numeros[0] >= lista_numeros[1] and lista_numeros[0] >= lista_numeros[2]:
-    maior_numero = lista_numeros[0]
 if lista_numeros[1] >= lista_numeros[0] and lista_numeros[1] >= lista_numeros[2]:
     maior_numero = lista_numeros[1]
 if lista_numeros[2] >= lista_numeros[0] and lista_numeros[2] >= lista_numeros[1]:
     maior_numero = lista_numeros[2]
 
 # Encontra menor valor (DE FORMA BRUTA) da lista
-if lista_numeros[0] <= lista_numeros[1] and lista_numeros[0] <= lista_numeros[2]:
-    menor_numero = lista_numeros[0]
 if lista_numeros[1] <= lista_numeros[0] and lista_numeros[1] <= lista_numeros[2]:
     menor_numero = lista_numeros[1]
 if lista_numeros[2] <= lista_numeros[0] and lista_numeros[2] <= lista_numeros[1]:
