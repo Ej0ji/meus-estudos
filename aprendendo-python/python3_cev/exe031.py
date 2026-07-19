@@ -3,8 +3,17 @@
 
 # Fazer um programa que leia um ano qualquer e mostre se ele é bissexto.
 
-ano = int(input('Insira um ano qualquer: '))
+# IMPORTAÇÕES
 
+from datetime import date
+
+#LÓGICA
+
+ano = int(input('Insira um ano qualquer para ver se é bissexto OU 0 para ver se o ano atual é bissexto: '))
+
+if ano == 0:
+    ano = date.today().year
+    
 print('-' * 40)
 
 # É um ano normal divisível por 4 OU, um ano secular divisível por 400? (ex: 1700, 1900)
