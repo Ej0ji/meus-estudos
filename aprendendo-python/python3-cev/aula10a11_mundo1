@@ -265,7 +265,7 @@ print("Esse texto terá o padrão {}{}{}!".format(cores['preto_e_branco'], nome,
 
 O exercício final do mundo 1 do curso de Python é uma revisão completa de todos os outros exercícios, pois o intuito do mesmo, é de estilizar as saídas de todos os exercícios ocorridos até o momento.
 
-- <a href="../python3_cev/exe035">Exercício 35</a>
+- <a href="../python3_cev/exe035.py">Exercício 35</a>
 
 ---
 Ir para: <a href="../python3_cev/aula12a13_mundo2">Mundo 2 - Aula 12 a 13</a>
