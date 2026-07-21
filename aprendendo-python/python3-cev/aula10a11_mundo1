@@ -127,14 +127,14 @@ print('PARABÉNS!' if média >= 6.0 else 'ESTUDE MAIS!')
 
 Para aprofundamento prático, consulte:
 
-- <a href="../python3_cev/exe027.py">Exercício 27</a>
-- <a href="../python3_cev/exe028.py">Exercício 28</a>
-- <a href="../python3_cev/exe029.py">Exercício 29</a>
-- <a href="../python3_cev/exe030.py">Exercício 30</a>
-- <a href="../python3_cev/exe031.py">Exercício 31</a>
-- <a href="../python3_cev/exe032.py">Exercício 32</a>
-- <a href="../python3_cev/exe033.py">Exercício 33</a>
-- <a href="../python3_cev/exe034.py">Exercício 34</a>
+- <a href="exe027.py">Exercício 27</a>
+- <a href="exe028.py">Exercício 28</a>
+- <a href="exe029.py">Exercício 29</a>
+- <a href="exe030.py">Exercício 30</a>
+- <a href="exe031.py">Exercício 31</a>
+- <a href="exe032.py">Exercício 32</a>
+- <a href="exe033.py">Exercício 33</a>
+- <a href="exe034.py">Exercício 34</a>
 
 Os exercícios desta aula, englobam o conceito de estruturas condicionais, mesclando com técnicas aprendidas durante outras aulas, como métodos de limpeza, transformação e operadores. 
 
@@ -265,7 +265,7 @@ print("Esse texto terá o padrão {}{}{}!".format(cores['preto_e_branco'], nome,
 
 O exercício final do mundo 1 do curso de Python é uma revisão completa de todos os outros exercícios, pois o intuito do mesmo, é de estilizar as saídas de todos os exercícios ocorridos até o momento.
 
-- <a href="../python3_cev/exe035.py">Exercício 35</a>
+- <a href="exe035.py">Exercício 35</a>
 
 ---
-Ir para: <a href="../python3_cev/aula12a13_mundo2">Mundo 2 - Aula 12 a 13</a>
+Ir para: <a href="aula12a13_mundo2">Mundo 2 - Aula 12 a 13</a>

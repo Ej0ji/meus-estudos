@@ -15,7 +15,7 @@ import pygame
 pygame.mixer.init()
 
 # Carrega o arquivo MP3 (substitua pelo nome do seu arquivo)
-pygame.mixer.music.load('C:/Users/ericj/OneDrive/Documents/GitHub/meus-estudos/aprendendo-python/python3_cev/assets/faaah.mp3')
+pygame.mixer.music.load('C:/Users/ericj/OneDrive/Documents/GitHub/meus-estudos/aprendendo-python/python3-cev/assets/faaah.mp3')
 
 # Inicia a reprodução
 pygame.mixer.music.play()
@@ -32,4 +32,4 @@ import playsound3
 
 # LÓGICA
 
-playsound3.playsound('C:/Users/ericj/OneDrive/Documents/GitHub/meus-estudos/aprendendo-python/python3_cev/assets/faaah.mp3')
+playsound3.playsound('C:/Users/ericj/OneDrive/Documents/GitHub/meus-estudos/aprendendo-python/python3-cev/assets/faaah.mp3')

@@ -263,17 +263,17 @@ Usa-se `\n` para inserir quebras de linha estratégicas no meio de um texto.
 
 Para aprofundamento prático, consulte:
 
-- <a href="../python3_cev/exe005.py">Exercício 5</a>
-- <a href="../python3_cev/exe006.py">Exercício 6</a>
-- <a href="../python3_cev/exe007.py">Exercício 7</a>
-- <a href="../python3_cev/exe008.py">Exercício 8</a>
-- <a href="../python3_cev/exe009.py">Exercício 9</a>
-- <a href="../python3_cev/exe010.py">Exercício 10</a>
-- <a href="../python3_cev/exe011.py">Exercício 11</a>
-- <a href="../python3_cev/exe012.py">Exercício 12</a>
-- <a href="../python3_cev/exe013.py">Exercício 13</a>
-- <a href="../python3_cev/exe014.py">Exercício 14</a>
-- <a href="../python3_cev/exe015.py">Exercício 15</a>
+- <a href="exe005.py">Exercício 5</a>
+- <a href="exe006.py">Exercício 6</a>
+- <a href="exe007.py">Exercício 7</a>
+- <a href="exe008.py">Exercício 8</a>
+- <a href="exe009.py">Exercício 9</a>
+- <a href="exe010.py">Exercício 10</a>
+- <a href="exe011.py">Exercício 11</a>
+- <a href="exe012.py">Exercício 12</a>
+- <a href="exe013.py">Exercício 13</a>
+- <a href="exe014.py">Exercício 14</a>
+- <a href="exe015.py">Exercício 15</a>
 
 Os exercícios propostos nessa parte do curso ajudam a consolidar os conceitos abordados na aula, principalmente o uso de operadores aritméticos, a formatação de saída e a lógica básica de programação. Eles são uma excelente forma de praticar a escrita de código de maneira gradual e objetiva.
 
@@ -486,11 +486,11 @@ Essas boas práticas tornam o código mais compreensível e evitam problemas fut
 
 Para aprofundamento prático consulte:
 
-- <a href="../python3_cev/exe016.py">Exercício 16</a>
-- <a href="../python3_cev/exe017.py">Exercício 17</a>
-- <a href="../python3_cev/exe018.py">Exercício 18</a>
-- <a href="../python3_cev/exe019.py">Exercício 19</a>
-- <a href="../python3_cev/exe020.py">Exercício 20</a>
+- <a href="exe016.py">Exercício 16</a>
+- <a href="exe017.py">Exercício 17</a>
+- <a href="exe018.py">Exercício 18</a>
+- <a href="exe019.py">Exercício 19</a>
+- <a href="exe020.py">Exercício 20</a>
 
 Esses exercícios são uma excelente oportunidade para colocar em prática tudo o que foi aprendido nesta aula, principalmente o uso de funções matemáticas, o cálculo de medidas como hipotenusa e razões trigonométricas, a aplicação de números aleatórios em situações simples e a utilização de recursos extras para melhorar a apresentação dos programas.
 
@@ -694,14 +694,14 @@ A formatação original é mantida integralmente na saída do terminal.
 
 Para aprofundamento prático, verifique os exercícios a seguir:
 
-- <a href="../python3_cev/exe021.py">Exercício 21</a>
-- <a href="../python3_cev/exe022.py">Exercício 22</a>
-- <a href="../python3_cev/exe023.py">Exercício 23</a>
-- <a href="../python3_cev/exe024.py">Exercício 24</a>
-- <a href="../python3_cev/exe025.py">Exercício 25</a>
-- <a href="../python3_cev/exe026.py">Exercício 26</a>
+- <a href="exe021.py">Exercício 21</a>
+- <a href="exe022.py">Exercício 22</a>
+- <a href="exe023.py">Exercício 23</a>
+- <a href="exe024.py">Exercício 24</a>
+- <a href="exe025.py">Exercício 25</a>
+- <a href="exe026.py">Exercício 26</a>
 
 Trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de strings de forma gradual e objetiva.
 
 ---
-Ir para: <a href="../python3_cev/aula10a11_mundo1">Aula 10 a 11</a>
+Ir para: <a href="aula10a11_mundo1">Aula 10 a 11</a>

@@ -57,7 +57,7 @@ Recebe apoio de grandes empresas como:
 
 Por ser uma linguagem:
 
--  interpretada;
+- Interpretada;
 - Multiplataforma;
 - De sintaxe simples e organizada;
 - De alta legibilidade;
@@ -88,7 +88,7 @@ Além da própria linguagem, para que as instruções escritas pelo programador 
  Ambos possuem um objetivo semelhante, converter as instruções na linguagem de programação para sinais (0 e 1) que as máquinas entendem. A principal diferença está na forma de tradução. Enquanto os compiladores traduzem todo o código-fonte de uma vez para a linguagem de máquina antes da execução, gerando um arquivo executável (como um .exe). Os interpretadores analisam, traduzem e executam o código sob demanda, instrução por instrução.
 Cada um destes possuem suas vantagens e desvantagens que, por ora, não vale o contexto.
 
-<img src="../python3_cev/imgs/comp-vs-interp.png" style="width: 500px; margin: 20px;">
+<img src="imgs/comp-vs-interp.png" style="width: 500px; margin: 20px;">
 
 *Figura 1 - Compilador e Interpretador*
 
@@ -108,7 +108,7 @@ E para obter os requisitos acima, basta seguir o passo-a-passo de instalação c
 
 ---
 
-Ir para: <a href="../python3_cev/aula04a06_mundo1">Aula 4 a 6</a>
+Ir para: <a href="aula04a06_mundo1">Aula 4 a 6</a>
 
 
 
