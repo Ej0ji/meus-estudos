@@ -3,9 +3,9 @@
 ## Sumário
 
 - [Aula 4 – Primeiros Comandos em Python3 + Exercício 0 + Desafios](#aula-4--primeiros-comandos-em-python3--exercício-0--desafios)
-  - [Como Exibir uma Mensagem? - Função 'print()'](#como-exibir-uma-mensagem---função-print)
+  - [Como Exibir uma Mensagem? - Função `print()`](#como-exibir-uma-mensagem---função-print)
   - [Concatenação e o Uso de Sinais](#concatenação-e-o-uso-de-sinais)
-  - [Variáveis e Entrada de Dados Através de Funções 'inputs()'](#variáveis-e-entrada-de-dados-através-de-funções-inputs)
+  - [Variáveis e Entrada de Dados Através de Funções `inputs()`](#variáveis-e-entrada-de-dados-através-de-funções-inputs)
   - [Relação com o Exercício 0 + Desafios](#relação-com-o-exercício-0--desafios)
 - [Aula 5 - Instalando o PyCharm e o QPython3 + Exercícios 1 e 2](#aula-5---instalando-o-pycharm-e-o-qpython3--exercícios-1-e-2)
   - [Relação com os Exercícios 1 a 2](#relação-com-os-exercícios-1-a-2)
@@ -32,9 +32,9 @@ OBS: Durante os exercícios é interessante observar que, para determinados prob
 ```
 
 ---
-### Como Exibir uma Mensagem? - Função 'print()'
+### Como Exibir uma Mensagem? - Função `print()`
 
-Para exibir mensagens, textos, resultados de cálculos e valores, pode-se utilizar a função 'print()' 
+Para exibir mensagens, textos, resultados de cálculos e valores, pode-se utilizar a função `print()`
 
     *OBS: O conceito de funções será visto mais a frente no curso*
 
@@ -80,7 +80,7 @@ O conceito de concatenação é essencial dentro do mundo da programação e, co
 
 #### Concatenação Utilizando o Símbolo de Adição '+':
 
-O símbolo de adição '+' em Python, além de ser, um operador de adição entre números, também possui diversas funções e uma delas é a concatenação de texto com texto, exclusivamente. Isto é, é possível concatenar textos, se e somente se tudo for string.
+O símbolo de adição '+' em Python, além de ser, um operador de adição entre números, também possui diversas funções e uma delas é a concatenação de texto com texto, exclusivamente. Isto é, é possível concatenar textos, se e somente se tudo for *string*.
 
 ```python
 print('Olá' + 'mundo')
@@ -121,7 +121,7 @@ Resultado: 7 7 # (7 string 7 string)
 ```
 
 ---
-### Variáveis e Entrada de Dados Através de Funções 'inputs()'
+### Variáveis e Entrada de Dados Através de Funções `inputs()`
 
 #### O Que São Variáveis?
 
@@ -151,14 +151,14 @@ nome = 'Guanabara'
 
 - **Espaços e caracteres especiais**: Não utilize espaços, hifens, acentos ou símbolos especiais.
 
-- **Palavras reservadas**: Não use palavras-chave que já possuem uma função na linguagem (ex: if, for, print, while).
+- **Palavras reservadas**: Não use palavras-chave que já possuem uma função na linguagem (ex: `if`, `for`, `print`, `while`).
 
 - **Sensibilidade** (*Case Sensitive*): Nomes com letras maiúsculas e minúsculas são tratados como variáveis diferentes. Ex: idade <> Idade.
 
 ---
-#### Atribuição de Variáveis Através de 'input()'
+#### Atribuição de Variáveis Através de `input()`
 
-Uma das possíveis formas de inserir dados em variáveis é a função 'input()'. Com esta, é criado para o usuário, um local para inserir dados através do terminal.
+Uma das possíveis formas de inserir dados em variáveis é a função `input()`. Com esta, é criado para o usuário, um local para inserir dados através do terminal.
 
 ```Python
 nome = input('Escreva seu nome: ')
@@ -174,7 +174,7 @@ Para aprofundamento prático, consulte:
 - <a href="exe000.py">Exercício 0</a>
 - <a href="dsfs_aula4.py">Desafios</a>
 
-Esses exercícios ajudam a consolidar o uso inicial de variáveis, entrada de dados e a lógica básica de interação com o usuário. Eles são uma boa forma de colocar em prática os primeiros conceitos vistos na aula, especialmente o uso da função input() e o entendimento de como um programa pode receber e processar informações.
+Esses exercícios ajudam a consolidar o uso inicial de variáveis, entrada de dados e a lógica básica de interação com o usuário. Eles são uma boa forma de colocar em prática os primeiros conceitos vistos na aula, especialmente o uso da função `input()` e o entendimento de como um programa pode receber e processar informações.
 
 ## Aula 5 - Instalando o *PyCharm* e o *QPython3* + Exercícios 1 e 2
 
@@ -196,7 +196,7 @@ Esses exercícios complementam a prática inicial com o Python, reforçando a id
 
 Como visto na aula 4, variáveis recebem valores, valores esses que são definidos por tipos.
 
-Então, além de receber os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função 'input()' é do tipo string: 
+Então, além de receber os dados é possível definir qual será o tipo de dado do valor inserido. Por padrão todo valor inserido na função `input()` é do tipo *string*: 
 
 ```Python
 # Verificar o tipo da variável usando função 'type()'.
@@ -214,10 +214,10 @@ Porém é possível redefinir os tipos desses valores.
 
 Antes de iniciar as mudanças de tipo de dados é preciso, obviamente, entender quais são os tipos primitivos. Aqui vão os mais comuns e usuais:
 
-- int (Inteiros): Valores numéricos sem casas decimais, positivos ou negativos (ex: 7, -4, 0);
-- float (Flutuantes/Reais): Números com ponto flutuante ou casas decimais (ex: 4.5, 0.075, -15.22).
-- bool (Booleanos): Valores lógicos que aceitam apenas dois estados: verdadeiro (True) ou falso (False).
-- str (Strings): Cadeias de caracteres delimitadas por aspas simples ou duplas (ex: 'Olá', "3.5").
+- `int` (Inteiros): Valores numéricos sem casas decimais, positivos ou negativos (ex: 7, -4, 0);
+- `float` (Flutuantes/Reais): Números com ponto flutuante ou casas decimais (ex: 4.5, 0.075, -15.22).
+- `bool` (Booleanos): Valores lógicos que aceitam apenas dois estados: verdadeiro (True) ou falso (False).
+- `str` (*Strings*): Cadeias de caracteres delimitadas por aspas simples ou duplas (ex: 'Olá', "3.5").
 
 Para cada um dos tipos acima, é possível realizar uma mudança de tipo específica utilizando funções de *type casting*:
 
@@ -251,11 +251,11 @@ Resultado: Insira um número: 3 -> (True) (tipo str para bool)
 
 Em casos, onde o objetivo é identificar de forma condicional (condicionais serão vistos mais a frente no curso) as saídas e tipos de variáveis, existem diversos métodos de verificação.
 
-Os métodos de verificação de tipos (is...) são testes lógicos nativos do Python para descobrir as propriedades do valor digitado, usando objetos de string:
+Os métodos de verificação de tipos (is...) são testes lógicos nativos do Python para descobrir as propriedades do valor digitado, usando objetos de *string*:
 
-- .isnumeric(): Verifica se o valor pode ser convertido para um número.
-- .isalpha(): Valida se o conteúdo é estritamente alfabético (letras).
-- .isalnum(): Confirma se o valor é alfanumérico (contém letras e/ou números).
+- `.isnumeric()`: Verifica se o valor pode ser convertido para um número.
+- `.isalpha()`: Valida se o conteúdo é estritamente alfabético (letras).
+- `.isalnum()`: Confirma se o valor é alfanumérico (contém letras e/ou números).
 
 ---
 ### Relação com os Exercícios 3 a 4

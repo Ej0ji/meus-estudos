@@ -2,10 +2,10 @@
 
 ## Sumário
 
-- [Aula 7 - Operadores Aritméticos + Exercícios 5 a 15](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
+- [Aula 7 - Operadores Aritméticos + Formatação Avançada de `Print()` + Exercícios 5 a 15](#aula-7---operadores-aritméticos--formatação-avançada-de-print--exercícios-5-a-15)
   - [Introdução aos Operadores Aritméticos](#introdução-aos-operadores-aritméticos)
   - [Ordem de Precedência](#ordem-de-precedência)
-  - [Operações com Strings e Recursos Especiais do Python](#operações-com-strings-e-recursos-especiais-do-python)
+  - [Operações com *Strings* e Recursos Especiais do Python](#operações-com-strings-e-recursos-especiais-do-python)
   - [Formatação Avançada de Saída (*Print*)](#formatação-avançada-de-saída-print)
   - [Relação com os Exercícios 5 a 15](#relação-com-os-exercícios-5-a-15)
 - [Aula 8 - Utilizando Módulos + Exercícios 16 a 20 + Desafios](#aula-8---utilizando-módulos--exercícios-16-a-20--desafios)
@@ -27,7 +27,7 @@
   - [Relação com os Exercícios 21 a 26](#relação-com-os-exercícios-21-a-26)
 
 ---
-## Aula 7 - Operadores Aritméticos + Formatação Avançada de 'Print()' + Exercícios 5 a 15
+## Aula 7 - Operadores Aritméticos + Formatação Avançada de `Print()` + Exercícios 5 a 15
 
 ### Introdução aos Operadores Aritméticos
 
@@ -180,9 +180,9 @@ Interessantemente, alguns operadores funcionam diferente quando aplicados a text
 ---
 ### Formatação Avançada de Saída (*Print*)
 
-Tendo domínio nas diversas formas de calcular diferentes valores em Python, é hora de aprender a exibir esses resultados de diferentes maneiras. Nem sempre queremos simplesmente imprimir um número — às vezes precisamos alinhá-lo, limitar casas decimais ou criar uma saída visualmente interessante.
+Tendo domínio nas diversas formas de calcular diferentes valores em Python, é hora de aprender a exibir esses resultados de diferentes maneiras. Nem sempre queremos simplesmente imprimir um número, às vezes precisamos alinhá-lo, limitar casas decimais ou criar uma saída visualmente interessante.
 
-O método `.format()` é uma ferramenta poderosa para isso. Ele permite inserir valores dentro de uma string e formatar como desejamos:
+O método `.format()` é uma ferramenta poderosa para isso. Ele permite inserir valores dentro de uma *string* e formatar como desejamos:
 
 #### Espaçamento e Alinhamento
 
@@ -208,7 +208,7 @@ print('|{:>20}|'.format('Python'))
 print('|{:<20}|'.format('Python'))
 # |Python              |
 ```
-Alinhamento padrão em listas ou labels.
+Alinhamento padrão em listas ou *labels*.
 
 **`{:^20}` — Centralizado:**
 
@@ -241,7 +241,7 @@ print('Pi = {:.3f}'.format(valor))
 
 Além da formatação de conteúdo, podemos controlar como o `print()` quebra linhas:
 
-- **`end=' '`**: Por padrão, `print()` termina com uma quebra de linha (`\n`). Usar `end=' '` substitui isso por um espaço, juntando vários prints na mesma linha:
+- **`end=' '`**: Por padrão, `print()` termina com uma quebra de linha (`\n`). Usar `end=' '` substitui isso por um espaço, juntando vários *prints* na mesma linha:
 
 ```python
 print('Olá', end=' ')
@@ -249,7 +249,7 @@ print('Mundo')
 # Olá Mundo
 ```
 
-- **`\n` — Quebra de linha dentro da string:**
+- **`\n` — Quebra de linha dentro da *string:***
 
 ```python
 print('Linha 1\nLinha 2')
@@ -498,7 +498,7 @@ Esses exercícios são uma excelente oportunidade para colocar em prática tudo 
 
 ### O Conceito de *String* e o Gerenciamento na Memória
 
-Nesta aula, estudaremos um dos pilares da programação em Python: a manipulação de textos. A ideia central é compreender como as strings são organizadas na memória, como elas podem ser acessadas em partes específicas, como podem ser analisadas e transformadas e, por fim, como podem ser exibidas de forma mais elegante e organizada.
+Nesta aula, estudaremos um dos pilares da programação em Python: a manipulação de textos. A ideia central é compreender como as *strings* são organizadas na memória, como elas podem ser acessadas em partes específicas, como podem ser analisadas e transformadas e, por fim, como podem ser exibidas de forma mais elegante e organizada.
 
 Também observaremos que as *strings* representam frases ou cadeias de caracteres delimitadas no Python por aspas simples ou aspas duplas (ex: `'Curso em Vídeo Python'`).
 
@@ -532,15 +532,15 @@ Quando atribuimos um valor textual a uma variável, o Python não armazena a fra
 ---
 ### Técnica de Fatiamento de *String* (*Slicing*)
 
-Basicamente, fatiar uma string consiste em extrair pedaços específicos dela. Para realizar essa operação, usamos a estrutura de colchetes `[]` logo após o nome da variável. Os principais intervalos funcionam conforme as regras a seguir:
+Basicamente, fatiar uma *string* consiste em extrair pedaços específicos dela. Para realizar essa operação, usamos a estrutura de colchetes `[]` logo após o nome da variável. Os principais intervalos funcionam conforme as regras a seguir:
 
 - **`frase[9]`**: Isola e retorna apenas o caractere localizado exatamente na posição 9.
 - **`frase[9:13]`**: Define um início (9) e um fim (13). A regra fundamental do Python determina que o último valor do intervalo sempre é excluído da contagem. Portanto, esse comando captura as posições 9, 10, 11 e 12, deixando a posição 13 de fora.
 - **`frase[9:21]`**: Observamos também que, embora o índice 21 não exista na frase (que vai até 20), o código funciona. Como o 21 é excluído, o interpretador captura o texto até a última posição real (20).
 - **`frase[9:21:2]`**: O terceiro número, define o "passo" ou salto. Nesse caso, a coleta dos caracteres ocorre do índice 9 ao 20, pulando de dois em dois.
-- **`frase[:5]`**: Ao omitir o primeiro valor antes dos dois pontos, o Python assume automaticamente o início da string, ou seja, o índice `0`.
+- **`frase[:5]`**: Ao omitir o primeiro valor antes dos dois pontos, o Python assume automaticamente o início da *string*, ou seja, o índice `0`.
 - **`frase[15:]`**: Ao omitir o segundo valor, o fatiamento se inicia na posição indicada (15) e prossegue até o final do texto, independentemente do tamanho.
-- **`frase[9::3]`**: Este comando permite combinar as regras anteriores. Ele começa no índice 9, segue até o final da string e avança de três em três caracteres.
+- **`frase[9::3]`**: Este comando permite combinar as regras anteriores. Ele começa no índice 9, segue até o final da *string* e avança de três em três caracteres.
 
   ```python
   frase = 'Curso em Vídeo Python'
@@ -569,12 +569,12 @@ Basicamente, fatiar uma string consiste em extrair pedaços específicos dela. P
 
 Estas são funções e métodos que servem para investigar a estrutura do texto e extrair dados quantitativos ou lógicos:
 
-- **`len(frase)`**: Função interna mede o comprimento do texto. Ela retorna um número inteiro correspondente ao total de caracteres e espaços que a string ocupa na memória.
+- **`len(frase)`**: Função interna mede o comprimento do texto. Ela retorna um número inteiro correspondente ao total de caracteres e espaços que a *string* ocupa na memória.
 - **`frase.count('o')`**: Método que conta a quantidade exata de vezes que o caractere minúsculo `'o'` surge no texto.
 - **`frase.count('o', 0, 13)`**: Executa a contagem da letra `'o'` por meio de um fatiamento interno, restringindo a busca entre os índices 0 e 12.
-- **`frase.find('deo')`**: Método que procura por uma sequência específica e aponta o índice exato onde essa sub-string se iniciou.
+- **`frase.find('deo')`**: Método que procura por uma sequência específica e aponta o índice exato onde essa *sub-string* se iniciou.
 - **`frase.find('Android')`**: Observamos que, caso o método `find()` busque por uma palavra inexistente no texto, o Python retorna `-1` para indicar a ausência de correspondência.
-- **`'Curso' in frase`**: O operador lógico `in` valida a existência de um termo dentro da string. O resultado gerado é um valor booleano: `True` ou `False`.
+- **`'Curso' in frase`**: O operador lógico `in` valida a existência de um termo dentro da *string*. O resultado gerado é um valor booleano: `True` ou `False`.
 
   ```python
   frase = 'Curso em Vídeo Python'
@@ -599,15 +599,15 @@ Estas são funções e métodos que servem para investigar a estrutura do texto 
 ---
 ### Métodos de Transformação de *Strings*
 
-Um conceito teórico também fundamental: as strings em Python são **imutáveis**. Elas não permitem alterar diretamente um único caractere de uma variável existente por meio de indexação direta (como fazer `frase[0] = 'J'`).
+Um conceito teórico também fundamental: as *strings* em Python são **imutáveis**. Elas não permitem alterar diretamente um único caractere de uma variável existente por meio de indexação direta (como fazer `frase[0] = 'J'`).
 
-Observamos que os métodos de transformação não modificam a string original na memória; eles geram uma nova versão modificada.
+Observamos que os métodos de transformação não modificam a *string* original na memória; eles geram uma nova versão modificada.
 
 Para que a alteração seja permanente na variável, é necessária uma reatribuição (ex: `frase = frase.upper()`).
 
 - **`frase.replace('Python', 'Android')`**: Esse método substitui uma palavra ou sequência por outra dentro do texto de forma dinâmica.
 - **`frase.upper()`**: Comando para converter todos os caracteres minúsculos em maiúsculos.
-- **`frase.lower()`**: Realiza a operação inversa, convertendo as letras maiúsculas da string em minúsculas.
+- **`frase.lower()`**: Realiza a operação inversa, convertendo as letras maiúsculas da *string* em minúsculas.
 - **`frase.capitalize()`**: Reduz todas as letras para minúsculo e transforma estritamente o primeiro caractere da frase em maiúsculo.
 - **`frase.title()`**: Realiza uma análise por palavra, identifica as quebras de palavras pelos espaços em branco e capitaliza a primeira letra de cada uma.
 
@@ -631,7 +631,7 @@ Para que a alteração seja permanente na variável, é necessária uma reatribu
 
 #### Remoção de Espaços Excedentes (Tratamento de Dados)
 
-Como espaços em branco desnecessários, inseridos acidentalmente no início ou no fim de strings, podem ser higienizados com os seguintes métodos:
+Como espaços em branco desnecessários, inseridos acidentalmente no início ou no fim de *strings*, podem ser higienizados com os seguintes métodos:
 
 - **`frase.strip()`**: O método elimina todos os espaços em branco presentes nas extremidades do texto. Os espaços internos que separam as palavras são preservados.
 - **`frase.rstrip()`**: Comando para remover apenas os espaços em branco localizados ao final do texto.
@@ -657,7 +657,7 @@ Como espaços em branco desnecessários, inseridos acidentalmente no início ou 
 Na sequência, formas de dividir e unir textos de maneira prática:
 
 - **`frase.split()`**: Este é um método que divide o texto original, gerando uma estrutura de dados do tipo lista. Por padrão, os cortes ocorrem nos espaços em branco. Cada palavra isolada torna-se um elemento dessa lista e passa a contar com uma indexação interna própria.
-- **`'-'.join(frase)`**:Este comando realiza o processo inverso da divisão. Ele agrupa os elementos de uma lista de palavras em uma nova string única, inserindo o caractere conector especificado entre eles.
+- **`'-'.join(frase)`**:Este comando realiza o processo inverso da divisão. Ele agrupa os elementos de uma lista de palavras em uma nova *string* única, inserindo o caractere conector especificado entre eles.
 
   ```python
   frase = 'Curso em Vídeo Python'
@@ -701,7 +701,7 @@ Para aprofundamento prático, verifique os exercícios a seguir:
 - <a href="exe025.py">Exercício 25</a>
 - <a href="exe026.py">Exercício 26</a>
 
-Trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de strings de forma gradual e objetiva.
+Trabalhamos com exercícios que ajudam a consolidar o uso de índices, fatiamento, métodos de análise e transformação de textos. Eles permitem que os estudantes pratiquem a manipulação de *strings* de forma gradual e objetiva.
 
 ---
 Ir para: <a href="aula10a11_mundo1">Aula 10 a 11</a>

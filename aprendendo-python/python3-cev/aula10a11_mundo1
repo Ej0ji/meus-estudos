@@ -4,12 +4,12 @@
 
 - [Aula 10 - Condições (Parte 1) + Exercícios 27 a 34](#aula-10---condições-parte-1--exercícios-27-a-34)
     - [Compreendendo a Lógica de Condicionais](#compreendendo-a-lógica-de-condicionais)
-    - [A Anatomia do *if* e *else* no Python](#a-anatomia-do-if-e-else-no-python)
+    - [A Anatomia do `if` e `else` no Python](#a-anatomia-do-if-e-else-no-python)
     - [Exemplos Práticos Comentados Passo a Passo](#exemplos-práticos-comentados-passo-a-passo)
     - [Relação com os Exercícios 27 a 34](#relação-com-os-exercícios-27-a-34)
 - [Aula 11 - Cores no Terminal](#aula-11---cores-no-terminal)
     - [Introdução: O Toque de Estética no Mundo dos Fundamentos](#introdução-o-toque-de-estética-no-mundo-dos-fundamentos)
-    - [O Padrão ANSI e as Sequências de Escape](#o-padrão-ansi-e-as-sequências-de-escape)
+    - [O Padrão *ANSI* e as Sequências de Escape](#o-padrão-ansi-e-as-sequências-de-escape)
     - [Modos Práticos de Implementação](#modos-práticos-de-implementação)
     - [Relação com o Exercício 35](#relação-com-o-exercício-35)
 
