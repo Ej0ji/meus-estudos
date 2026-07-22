@@ -48,14 +48,14 @@ Imagine um algoritmo como um carro navegando por uma estrada.
 
 Para entender a dinâmica de maneira simples, nós dividimos esse conceito em **duas categorias fundamentais**:
 
-- **Condição Simples (if)**: Existe apenas uma ação especial a ser tomada se o cenário for favorável. Se a condição for falsa, o programa ignora o desvio e segue em frente.
+- **Condição Simples (`if`)**: Existe apenas uma ação especial a ser tomada se o cenário for favorável. Se a condição for falsa, o programa ignora o desvio e segue em frente.
 
-- **Condição Composta (if / else)**: O programa se depara com dois caminhos mutuamente exclusivos.
+- **Condição Composta (`if...else`)**: O programa se depara com dois caminhos mutuamente exclusivos.
     - Se a condição for verdadeira, nós seguimos pelo caminho A;
     - Se for falsa, nós obrigatoriamente seguimos pelo caminho B. Nunca os dois caminhos serão executados simultaneamente.
 
 ---
-### A Anatomia do *if* e *else* no Python
+### A Anatomia do `if` e `else` no Python
 
 O Python exige uma sintaxe limpa, mas que requer atenção total a dois elementos reguladores: os **dois-pontos (:)** e a **indentação**.
 
