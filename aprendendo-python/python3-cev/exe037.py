@@ -10,8 +10,8 @@ base_conversao = int(input('Digite a base de conversão: 1 para binário, 2 para
 print('-' * 40)
 
 if base_conversao == 1:
-    print('O número {} convertido para binário é: {}'.format(numero_int, bin(numero_int)))
+    print('O número {} convertido para binário é: {}.'.format(numero_int, bin(numero_int)))
 elif base_conversao == 2:
-    print('O número {} convertido para octal é: {}'.format(numero_int, oct(numero_int)))
+    print('O número {} convertido para octal é: {}.'.format(numero_int, oct(numero_int)))
 elif base_conversao == 3:
-    print('O número {} convertido para hexadecimal é: {}'.format(numero_int, hex(numero_int)))
+    print('O número {} convertido para hexadecimal é: {}.'.format(numero_int, hex(numero_int)))
