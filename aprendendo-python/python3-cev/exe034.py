@@ -8,12 +8,9 @@ print('VALIDADOR DE EXISTÊNCIA DE TRIÂNGULO')
 print('-' * 40)
 
 retas = []
-reta = float(input('Digite o valor da reta a do triângulo: '))
-retas.append(reta)
-reta = float(input('Digite o valor da reta b do triângulo: '))
-retas.append(reta)
-reta = float(input('Digite o valor da reta c do triângulo: '))
-retas.append(reta)
+retas.append(float(input('Digite o valor da reta a do triângulo: ')))
+retas.append(float(input('Digite o valor da reta b do triângulo: ')))
+retas.append(float(input('Digite o valor da reta c do triângulo: ')))
 
 print('-' * 40)
 
