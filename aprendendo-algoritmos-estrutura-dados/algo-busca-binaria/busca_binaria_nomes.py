@@ -1,10 +1,10 @@
-# --- IMPORTAÇÕES ----------------------------------------------------------------------------------------------------------------------------
+# IMPORTAÇÕES 
 
 import time
 from math import trunc
 from dicionario_nomes import dicionarioGenerico # Biblioteca local com o dicionário de nomes genéricos
 
-# --- LÓGICA ---------------------------------------------------------------------------------------------------------------------------------
+# LÓGICA 
 
 def buscaBinaria(iniLista, fimLista): # -> int
 
