@@ -1,4 +1,4 @@
-# Exercício 46 - Aula 12
+# Exercício 46 - Aula 13
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
 # Fazer um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.
