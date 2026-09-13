@@ -134,7 +134,102 @@ Para aprofundamento prático, consulte:
 - <a href="exe044.py">Exercício 44</a>
 - <a href="exe045.py">Exercício 45</a>
 
+Os exercícios acima mostram na prática como criar estruturas condicionais em casos específicos e até mesmo exemplos reais, onde são realizadas lógicas de comparação de quantidades e valores para determinar novas ações.
+
 ---
-### Aula 13 - Estruturas de Repetição (Parte 1) + Exercícios 46 a 56 
+## Aula 13 - Estruturas de Repetição (Parte 1) + Exercícios 46 a 56
 
+### Introdução a Estruturas de Repetição
 
+Até o momento nos estudos de programação, o fluxo baseava-se em seguir condições para realizar determinadas ações. A partir de agora, o foco passa a ser a repetição de ações. As estruturas de controle de repetição, também conhecidas como laços ou iterações, existem para evitar a escrita de códigos exaustivos e idênticos.
+
+Imagine um personagem em um jogo que precisa dar dezenas de passos para alcançar uma maçã. Em vez de escrever o comando "dar passo" repetidas vezes, cria-se um laço que instrui o computador a repetir essa ação automaticamente. Esta aula explora a estrutura de repetição mais simples e essencial da linguagem: o laço com variável de controle, conhecido no Python como `for`.
+
+### O Comando `for` e a Sintaxe Básica
+
+O comando `for` atua estabelecendo um limite exato de repetições. Para o Python compreender onde a contagem se inicia e onde ela termina, utiliza-se a função `range()` (que significa "intervalo"), sempre associada à indentação do código.
+
+    Regra de Ouro: Tudo o que está indentado abaixo da linha do `for` pertence ao laço e se repetirá. O que estiver alinhado à margem esquerda, fora do bloco, executará apenas após o término de todas as repetições. Lembre-se, também, de sempre finalizar a linha de declaração do `for` com os dois pontos (:).
+
+#### **Exemplo Prático 1**: Contagem Simples
+
+Observe o código a seguir. Ele repetirá a impressão da mensagem na tela baseando-se no intervalo estipulado.
+
+```Python
+# O laço executará de 1 até 5. O número 6 é sempre ignorado pelo Python.
+for contador in range(1, 6):
+    print("Passo número {}".format(contador))
+    
+print("Fim do trajeto!")
+```
+
+### Explorando a Função `range()`
+
+A função `range(início, fim, passo)` é altamente flexível e recebe até três parâmetros simultâneos. O Python permite realizar contagens progressivas, contagens regressivas ou, até mesmo, pular números em intervalos maiores.
+
+Considere a seguinte particularidade: o Python ignora o último número do intervalo. Portanto, se o objetivo for uma contagem que inclua o número 10, determine o final do *range* como 11.
+
+#### **Exemplo Prático 2**: Contagem Regressiva e Saltos
+
+Para executar uma contagem para trás, defina o início maior que o fim e utilize o passo como -1. Para saltar números, como pular de dois em dois, altere o passo para 2.
+
+```Python
+# Contagem regressiva de 6 até 1
+for c in range(6, 0, -1):
+    print("Contagem regressiva: {}".format(c))
+
+print("Decolar!")
+
+# Contagem de 0 a 10, pulando de 2 em 2 (mostra apenas os pares)
+for c in range(0, 11, 2):
+    print("Número par detectado: {}".format(c))
+```
+
+### Integração do `for` com Condicionais (`if`)
+
+A lógica de programação permite aninhar comandos, isto é, inserir uma estrutura dentro de outra. Coloque tranquilamente estruturas condicionais (como o `if`) dentro do laço `for` se o problema em questão exigir verificações a cada repetição.
+
+Caso o personagem do jogo precise caminhar, pular buracos e pegar moedas apenas se elas existirem naquele espaço, insere-se um bloco `if` dentro da indentação do `for`. Deste modo, o programa avaliará a condição a cada passo dado.
+
+### Interação com o Usuário e Somatórios (Acumuladores)
+
+O laço `for` demonstra seu maior potencial quando processa dados inseridos dinamicamente pelo usuário. Lê-se valores diversas vezes posicionando o comando `input()` internamente ao laço e, aplicando lógicas matemáticas, soma-se todos os valores em uma variável acumuladora.
+
+#### **Exemplo Prático 3**: Lendo e Acumulando Valores
+
+Execute mentalmente o código abaixo e compreenda como o somatório se atualiza e cresce a cada repetição, guardando o resultado total no final do processo.
+
+```Python
+soma = 0
+# Repete 4 vezes, solicitando um novo número a cada volta
+for c in range(0, 4):
+    numero = int(input("Digite o {}º valor para a soma: ".format(c + 1)))
+    soma = soma + numero  # A variável 'soma' acumula o valor digitado atual
+
+print("O somatório de todos os valores fornecidos é igual a {}".format(soma))
+```
+
+### Relação com os Exercícios 46 a 56
+
+Para aprofundamento prático, consulte:
+
+- <a href="exe046.py">Exercício 46</a>
+- <a href="exe047.py">Exercício 47</a>
+- <a href="exe048.py">Exercício 48</a>
+- <a href="exe049.py">Exercício 49</a>
+- <a href="exe050.py">Exercício 50</a>
+- <a href="exe051.py">Exercício 51</a>
+- <a href="exe052.py">Exercício 52</a>
+- <a href="exe053.py">Exercício 53</a>
+- <a href="exe054.py">Exercício 54</a>
+- <a href="exe055.py">Exercício 55</a>
+- <a href="exe056.py">Exercício 56</a>
+
+Os exercícios desta aula mostram a importância dessa estrutura, pois ela integra as ferramentas mais relevantes para a fluidez e otimização do seu código.
+
+Da indentação: Um `print()` alinhado de forma equivocada mudará o comportamento de toda a aplicação, repetindo na tela textos que deveriam ser impressos uma única vez.
+
+E atenção aos sinais vitais do Python: Esquecer os dois pontos (:) no final do comando for consiste no erro mais comum para quem está começando.
+
+---
+Ir para: <a href="aula14a15_mundo2">Mundo 2 - Aula 14 a 15</a>
