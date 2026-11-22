@@ -39,18 +39,18 @@ e_palindromo = True
 
 if caracteres_frase % 2 == 0:
     indice_max = int(caracteres_frase/2)
-    indice_fim_frase = caracteres_frase - 1
     for i in range(0, indice_max):
-        if frase_sem_acentos[i] == frase_sem_acentos[indice_fim_frase - i]:
+        indice_fim_frase = (i+1) * -1
+        if frase_sem_acentos[i] == frase_sem_acentos[indice_fim_frase]:
             print('{}ª comparação de caracteres: OK.'.format(i+1))
         else:
             e_palindromo = False
             print('{}ª comparação de caracteres: FALHOU.'.format(i+1))
 else:
     indice_max = int(((caracteres_frase-1)/2)+1)
-    indice_fim_frase = caracteres_frase - 1
     for i in range(0, indice_max):
-        if frase_sem_acentos[i] == frase_sem_acentos[indice_fim_frase - i]:
+        indice_fim_frase = (i+1) * -1
+        if frase_sem_acentos[i] == frase_sem_acentos[indice_fim_frase ]:
             print('{}ª comparação de caracteres: OK.'.format(i+1))
         else:
             e_palindromo = False
