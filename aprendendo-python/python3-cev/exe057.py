@@ -1,4 +1,4 @@
-# Exercício 57 - Aula 13
+# Exercício 57 - Aula 14
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
 # Fazer um programa que leia o sexo de uma pessoa, mas só aceite os valores ‘M’ ou ‘F’. Caso esteja errado, peça a digitação novamente até ter um valor correto.
