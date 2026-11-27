@@ -1,4 +1,4 @@
-# Exercício 55 - Aula 13
+# Exercício 56 - Aula 13
 # Utilize as aspas triplas (''' ''') ou hashtag (#) para comentar e testar cada comando linha a linha.
 
 # Desenvolver um programa que leia o nome, idade e sexo de n pessoas. No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos.
